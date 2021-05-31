@@ -1,0 +1,115 @@
+package checkpoint2;
+
+import java.util.Scanner;
+
+public class Metodos {
+
+	Scanner input = new Scanner(System.in);
+
+	//Operações básicas
+	public double calculaOpBasica(int opcao, double num1, double num2) {
+		double resultado = 0;
+		
+		if(opcao == 1) {
+			resultado = num1 + num2;
+		} else if(opcao == 2) {
+			resultado = num1 - num2;
+		}else if(opcao == 3) {
+			resultado = num1 * num2;
+		}else if(opcao == 4) {
+			resultado = num1 / num2;
+		}
+		return resultado;
+	}
+		
+	//Media aritimetica
+	public String calculaAritimetica(double nota1, double nota2, double nota3) {
+			double media;
+			String result = null;
+			double soma = nota1 + nota2 + nota3;
+			media = soma / 3;
+			
+			System.out.printf("A média é: %.2f \n",media);
+			if(media >=6) {
+				result = "Aprovado";
+			} else if(media >= 5 && media < 6) {
+				result = "Prova Substitutiva";
+			} else if(media < 5) {
+				result = "Reprovado";			
+			}
+			return result;
+		}
+	
+	//Media ponderada
+	public String calculaMediaPonderada(double nota1, double nota2) {
+		
+		double media;
+		String result = null;
+		
+		
+		media = (nota1*0.4)+(nota2*0.6);
+		System.out.println(media);
+		
+	
+		System.out.printf("A média é: %.2f \n",media);
+		if(media >=6) {
+			result ="Aprovado";
+		} else if(media >= 5 && media < 6) {
+			result = "Prova Substitutiva";
+		} else if(media < 5) {
+			result = "Reprovado";			
+		}
+		return result;
+	}
+	
+	//Área do círculo
+	public double calculaAreaCirc(double raio) {					
+		double r = Math.PI * (raio * raio);			
+		return r;		
+	}
+	
+	//Área do retângulo
+	public double calculaAreaRetangulo(double base, double altura) {					
+		double a = base*altura;			
+		return a;		
+	}
+	
+	//Velocidade média
+	public double calculaVelocidadeMedia(double dist, double tempo) {
+        double resultado = dist/tempo;
+        return resultado;
+    }
+	
+	//Soma todos os valores
+	public int somaTodos(int numero) {
+        int soma=0;
+
+        for (int i=1; i<=numero; i++) {
+            soma = soma + i;
+        }
+
+        return soma;
+    }
+	
+	//Celsius para Fahrenheit
+	public double converteCelsParaFah(double celsius) {
+		double fahr = celsius * 1.8 + 32;
+		return fahr;
+	}
+	
+	//Fahrenheit para Celsius
+	public double converteFahParaCels(double fahr) {
+		double cels = (fahr-32)/1.8;
+		return cels;
+	}
+	
+	//Raiz quadrada (Livre escolha)
+	public double calculaRaizQuadrada(double numero) {
+	    double resultado = 0;
+	    resultado = Math.sqrt(numero);
+	    return resultado;
+	}
+    
+}
+
+

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="9FE9DBB5-E4FE-8040-1257-5C71DBB1AA19">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:41:12 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

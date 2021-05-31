@@ -1,0 +1,41 @@
+package challenge;
+
+
+
+public class Comentario {
+
+	
+	
+	private long userId;
+	private long comentId;
+	private String data;
+	private String conteudo;
+	
+	public Comentario(long userId, long comentId String data, String conteudo) {
+			this.userId = userId;
+			this.data = data;
+			this.conteudo = conteudo;
+			this.comentId = comentId;
+	}
+	
+	public long getUserId() {
+		return userId;
+	}
+
+	public long getComentId() {
+		return comentId;
+	}
+
+	public String getData() {
+		return data;
+	}
+
+	public String getConteudo() {
+		return conteudo;
+	}
+
+	
+	
+
+
+}

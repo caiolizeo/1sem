@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6101B9D9-B233-C11C-C96D-BD5CD2654F7A" mainViewID="CAFC39BF-BF1B-C3FA-B49B-A27955D872C4">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:40:50 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

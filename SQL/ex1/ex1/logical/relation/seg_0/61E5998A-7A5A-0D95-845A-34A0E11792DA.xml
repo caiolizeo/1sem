@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IMPLANTAR" directorySegmentName="seg_0" id="61E5998A-7A5A-0D95-845A-34A0E11792DA">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-26 14:10:55 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<sourcePk>73544699-E2EB-9ACA-FEEC-FBED678B3AF8</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B0FBB1DA-B497-2B93-18AE-E7847E22C8BA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1EDC9BEB-FA2F-7F9B-E438-96A6AC582F2C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ex2" id="DDF99C22-D9E1-CE83-FBAD-A41142C99FB4" version="3.5">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:14:48 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DDF99C22-D9E1-CE83-FBAD-A41142C99FB4</designId>
+</OSDM_Design>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="0D8EAC57-E67B-94A0-3E7B-BDA91B9B5514" name="T_SPV_CLIENTE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="1F44EDAA-5D03-5FE6-B7EA-F099C92C7789" name="T_SPV_CLASSIF_FISCAL" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="220AEBE7-E58A-9812-4D67-4986D092DC33" name="T_SPV_ITEM_NF" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="2495C59C-40DF-1CA0-A045-252D48E4F99A" name="T_SPV_NOTA_FISCAL" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="6702A28A-91FF-6970-8C0B-B463FDFF990E" name="T_SPV_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="8D3B266A-C2F0-601A-6089-289EC2008493" name="T_SPV_UNID_CML" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

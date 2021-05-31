@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1F44EDAA-5D03-5FE6-B7EA-F099C92C7789" name="T_SPV_CLASSIF_FISCAL">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:23:06 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_cfop" id="E5F93505-39F4-510C-660C-62B9AE8A29D5">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:23:27 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_tipo_operacao" id="6AC6334C-0C7B-5918-BB5B-6CD8B02E83F9">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:23:37 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_natureza_operacao" id="99232726-710B-FCFE-6CEB-E467C8704569">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:23:48 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_natureza_operacao" id="8ED9B787-025F-BFC8-643D-5395B4E33141">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:24:07 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC3018F2-8C55-44C6-D7FE-5573197A7842" name="T_SPV_CLASSIF_FISCAL PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:23:36 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5F93505-39F4-510C-660C-62B9AE8A29D5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

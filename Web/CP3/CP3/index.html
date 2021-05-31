@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/index.css">
+    
+  </head>
+<body>
+
+
+<div class="topnav">          
+    <div class="textnav">
+      <div><a id="index" href="./index.html">Index</a></div>
+      <div><a href="./novocadastrologin.html">Novo Cadastro</a></div>
+      <div><a href="./faleconosco.html">Fale Conosco</a></div>
+      <div><a href="./portal.html">Portal</a></div>
+    </div>
+</div>
+<div class="container">
+  <div class="child_container">
+    <form id="form_id" onsubmit="return addEventListener()">
+      <h1 class="th1">Login</h1> 
+      <div> 
+        <label for="nome_login">Primeiro nome</label>
+        <input class="entrada" id="nome" name="nome_login" required type="text" placeholder="Digite seu primeiro nome"/>
+      </div>
+      
+      <div> 
+        <label for="senha_login">Senha</label>
+        <input class="entrada" id="senha" name="senha_login" required type="password" pattern="[0-9]{5}" maxlength="5" placeholder="12345"
+        oninvalid="setCustomValidity('A senha deve conter apenas 5 números')">
+      </div>
+      
+      <div> 
+        <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+        <label class="manterlogado" for="manterlogado">Manter-me logado</label>
+      </div>
+    </form>
+
+    <div> 
+      <input class="entrada" type="submit" value="Entrar" id="btn_submit" form="form_id"/>
+    </div>
+    
+    <div>
+      <p class="p_cadastro">Ainda não tem conta?</p>
+      <a href="./novocadastrologin.html"><input class="entrada" id="cadastro" type="submit" value="Cadastre-se" /></a>
+    </div> 
+</div>
+</div>
+<!--
+<form method="post" action="sendmail.php">
+  <input type="text" class="text required" value="" placeholder="nome" name="nome">
+  <input type="text" class="text required" value="" placeholder="email" name="email">
+  <input type="text" class="text required" value="" placeholder="telefone" name="telefone">
+  <textarea class="required" placeholder="mensagem" name="mensagem"></textarea>
+  <input type="submit" value="[ Enviar Mensagem ]" />
+</form>-->
+
+</body>
+</html>
+
+<script src="./js/script.js"></script>
+<script>
+  pag_login();
+</script>

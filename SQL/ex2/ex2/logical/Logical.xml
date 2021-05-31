@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4E9D5F80-7131-C875-F2B2-A6F442E5DE96" mainViewID="7B0ECB28-3DA8-3E8F-B93B-90E9B5792581">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:14:48 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

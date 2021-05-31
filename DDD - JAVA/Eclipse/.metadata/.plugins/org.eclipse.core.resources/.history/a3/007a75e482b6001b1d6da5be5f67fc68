@@ -1,0 +1,19 @@
+package checkpoint2;
+
+import java.util.Scanner;
+
+public class TesteMenu {
+
+	public static void main(String[] args) {
+		Metodos metodos = new Metodos();
+		Scanner input = new Scanner(System.in);
+		
+		metodos.menu();
+		System.out.println("selecione uma opção");
+		int opcao = input.nextInt();
+		metodos.opcaoSelecionada(opcao);
+
+	
+	}
+
+}

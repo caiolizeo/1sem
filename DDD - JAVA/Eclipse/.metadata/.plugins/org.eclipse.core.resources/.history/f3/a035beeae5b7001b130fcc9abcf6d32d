@@ -1,0 +1,31 @@
+package challenge;
+
+import java.text.SimpleDateFormat;
+
+public class Comentario {
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSSS");
+	
+	
+	private long userId;
+	private long comentId;
+	private String data;
+	private String conteudo;
+	
+	public Comentario(long idUsuario, String data, String conteudo) {
+			this.userId = idUsuario;
+			this.data = data;
+			this.conteudo = conteudo;
+			this.comentId = randomId();
+	}
+	
+	private long randomId() {
+	    String id = sdf.format(System.currentTimeMillis());
+	    long numero = Long.valueOf(id).longValue();
+	    return numero;
+	}
+
+	
+	
+
+
+}

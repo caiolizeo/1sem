@@ -1,0 +1,38 @@
+package challenge;
+
+import java.text.SimpleDateFormat;
+
+public class Teste {
+	static SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSSS");
+	
+	private static long randomId() {
+	    String id = sdf.format(System.currentTimeMillis());
+	    long numero = Long.valueOf(id).longValue();
+	    return numero;
+	}
+	 
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		Usuario fulano = new Usuario(randomId(), "email@email.com", "123456", "Fulano", "Da Silva",
+				"15/05/1995", "masculino", "11 99999-4444", "Comum");
+		long userId = fulano.getUserId();
+		Chat chat = new Chat(userId, randomId(), "Teste");
+		
+		Publicacao publicacao = new Publicacao(userId, randomId(), "17/05/2021", "depoimento", "Feliz", "Conteúdo");
+		
+		Comentario coment = new Comentario(userId, randomId(), "21/05/2021", "OLA");
+		
+
+		System.out.println(fulano.getUserId());
+		System.out.println(chat.getChatId());
+		System.out.println(publicacao.getPubId());
+		System.out.println(coment.getComentId());
+		
+		
+		
+	}	
+}

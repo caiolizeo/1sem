@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0DD7052-8321-5171-36FA-7FAB0382E34C" name="T_SIP_FUNCIONARIO">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:55:17 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_matricula" id="A2CDC7AF-174A-BC91-0C75-F7A7031C1332">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:55:48 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_funcionario" id="AF86F460-BCC7-ECAF-9C4F-E1C37BC2A190">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:55:57 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="89D02C80-555D-A375-E318-6E0087CE7CDD">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:56:06 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_admissao" id="49B4A11C-2E99-71EA-CE86-A91A750FAE86">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:56:17 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_endereco" id="A3DE8BB2-7A40-CDA5-0F60-DAAAA3F808EB">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:56:28 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_salario" id="5F2B3D8C-97E1-67DB-17BF-6506F1A4CCBB">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:56:38 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_depto" id="3C3439B3-80FC-1EC0-309C-FC9E7BF7C0FB">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-26 13:17:02 UTC</createdTime>
+<generatorID>350B3915-A847-37C1-10E1-10FBC0A02AC4</generatorID>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<referedAttribute>37C88786-F924-28AE-882A-8283798DF769</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_dependente" id="DBC1BD09-B8B9-BB15-1636-CFB68CD77BDF">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-26 13:58:53 UTC</createdTime>
+<generatorID>3DF007C1-BE95-5C7E-2672-F49BAA8F6DF2</generatorID>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<referedAttribute>7581FE6F-3D40-D758-04B6-D6483786CCD1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A3056E4E-F69E-DFB4-D8D9-52388F4D765A" name="T_SIP_FUNCIONARIO PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 13:55:54 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A2CDC7AF-174A-BC91-0C75-F7A7031C1332</attributeRef>
+<attributeRef>DBC1BD09-B8B9-BB15-1636-CFB68CD77BDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

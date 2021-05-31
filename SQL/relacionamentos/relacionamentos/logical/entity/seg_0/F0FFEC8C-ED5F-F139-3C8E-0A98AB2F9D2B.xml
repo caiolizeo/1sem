@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0FFEC8C-ED5F-F139-3C8E-0A98AB2F9D2B" name="T_ITEM_PEDIDO">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:38:28 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_pedido" id="6E185C6B-45BE-4522-F469-24DE16F6C7DB">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:43:54 UTC</createdTime>
+<generatorID>AC7060A7-C63E-0F99-0A29-5E3C823EB23E</generatorID>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<referedAttribute>EFF3EF13-2D51-29BE-58BA-CC5068A5958F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_produto" id="A1C2F8D8-82EB-4F60-E9EE-ABFEB8B69CAC">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:46:01 UTC</createdTime>
+<generatorID>9546AC99-3CC5-526C-4F07-07EDDDAE005E</generatorID>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<referedAttribute>3964F1BD-D7A3-7329-DA28-B3BC6E5DC480</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_comercializada" id="6BA20E94-125F-5A96-71BE-D0F3B8E47AFC">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:38:37 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_preco_unitario" id="CE9CF974-8CB3-05BC-D7A5-3F29DEE0AB73">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:38:53 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_total_item" id="19A31281-689D-160A-5659-6CB480A317B2">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:39:00 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="511D2A22-512F-EB7B-FA9F-6B34101A4DE2" name="T_ITEM_PEDIDO PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-12 14:43:54 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E185C6B-45BE-4522-F469-24DE16F6C7DB</attributeRef>
+<attributeRef>A1C2F8D8-82EB-4F60-E9EE-ABFEB8B69CAC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

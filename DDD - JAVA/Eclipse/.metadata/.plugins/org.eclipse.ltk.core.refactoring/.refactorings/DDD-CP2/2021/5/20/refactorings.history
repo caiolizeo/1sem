@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;menu&apos; to &apos;checkpoint2&apos;&#x0D;&#x0A;- Original project: &apos;DDD-CP2&apos;&#x0D;&#x0A;- Original element: &apos;DDD-CP2/src/menu&apos;&#x0D;&#x0A;- Renamed element: &apos;DDD-CP2/src/checkpoint2&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;menu&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;menu" name="checkpoint2" qualified="false" references="true" stamp="1620745558761" textual="false" version="1.0"/>
+</session>

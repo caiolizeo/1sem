@@ -1,0 +1,79 @@
+package checkpoint2;
+
+import java.util.Scanner;
+
+public class TesteCP2 {
+
+	public static void main(String[] args) {
+
+		Metodos metodos = new Metodos();
+		Scanner input = new Scanner(System.in);
+		int resposta;
+		
+		
+		System.out.printf("escolha uma opção: ");
+		resposta = input.nextInt();
+		
+		
+		if(resposta == 1 || resposta == 2 || resposta == 3 || resposta == 4) {
+			System.out.printf("Digite o primeiro número \n---> ");
+			double num1 = input.nextDouble();
+			System.out.printf("Digite o segundo número \n---> ");
+			double num2 = input.nextDouble();
+			System.out.printf("O resultado da operação é: %.2f",metodos.calculaOpBasica(resposta, num1, num2));
+		} else if(resposta == 5) {
+			System.out.printf("Digite a primeira nota \n---> ");
+			double nota1 = input.nextDouble();
+			System.out.printf("Digite a segunda nota \n---> ");
+			double nota2 = input.nextDouble();
+			System.out.println(metodos.calculaMediaPonderada(nota1, nota2));
+		} else if(resposta == 6) {
+			System.out.printf("Digite a primeira nota \n---> ");
+			double nota1 = input.nextDouble();
+			System.out.printf("Digite a segunda nota \n---> ");
+			double nota2 = input.nextDouble();
+			System.out.printf("Digite a terceira nota \n---> ");
+			double nota3 = input.nextDouble();
+			System.out.println(metodos.calculaAritimetica(nota1, nota2, nota3));
+		} else if(resposta == 7) {
+			System.out.printf("Digite valor do raio \n---> ");
+			double raio = input.nextInt();
+			System.out.printf("A área do círculo é: %.2f", metodos.calculaAreaCirc(raio));
+		} else if(resposta == 8) {
+			System.out.printf("Digite valor a base \n---> ");
+			double base = input.nextInt();
+			System.out.printf("Digite valor a altura \n---> ");
+			double altura = input.nextInt();
+			System.out.printf("A área do retângulo é: %.2f", metodos.calculaAreaRetangulo(base, altura));
+		} else if(resposta == 9) {
+		    System.out.printf("Digite a distância em Km \n---> ");
+		    double dist = input.nextDouble();
+		    System.out.printf("Digite o tempo de duração da viagem em horas \n--->");
+		    double tempo = input.nextDouble();
+		    System.out.printf("A velocidade média da viagem é de %.2f Km/h.", metodos.calculaVelocidadeMedia(dist, tempo));
+		} else if(resposta == 10) {
+			System.out.printf("Digite um número inteiro \n---> ");
+		    int num = input.nextInt();
+		    System.out.printf("A soma de todos os valores entre 1 e %d é %d. ", num, metodos.somaTodos(num)); 
+		} else if(resposta == 11) {
+			System.out.printf("Digite um número Celsius \n---> ");
+			int celsius = input.nextInt();
+			System.out.printf("A temperatura em Fahrenheit é: %.2f", metodos.converteCelsParaFah(celsius));
+		} else if(resposta == 12) {
+			System.out.printf("Digite um número Fahrenheit \n---> ");
+			int fahr = input.nextInt();
+			System.out.printf("A temperatura em Celsius é: %.2f", metodos.converteFahParaCels(fahr));
+		}
+		
+		
+		
+		else if(resposta == 15) {
+			System.out.printf("Digite o número desejado \n---> ");
+			double num = input.nextDouble();
+			System.out.printf("A raiz quadrada de %.2f é %.2f", num, metodos.calculaRaizQuadrada(num));
+		}
+		
+	}
+		
+}
+

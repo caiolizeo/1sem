@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3189C33F-815E-2ECA-2F4C-B955A3396D66" name="T_GERENTE">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:44:58 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_gerente" id="FD4F1200-0622-3E6B-A527-1B8D8567AE56">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:45:06 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_depto" id="CE43FF4B-908A-58C5-DBE1-5C8BEBF6B94E">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:49:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[UID RELAÇÃO = IDENTIFICADOR UNICO DA RELAÇÃO = CHAVE ESTRANGEIRA]]></commentInRDBMS>
+<generatorID>2D1F3760-231B-DBA4-ADFC-A548F4F3C83A</generatorID>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<referedAttribute>61AB7E81-2F6A-DD35-4FC8-C9BC8A95B5C9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_gerente" id="F32722A5-18A3-9D83-3D02-ED0E5A1051CF">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:45:13 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_salario" id="357AA58A-B020-796D-C570-632C7305CAB4">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:45:20 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="587D1CD8-1CE1-3143-167E-21657AFCF2BA" name="T_GERENTE PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:45:12 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<engineerTo>
+<item key="3164C1B3-0390-A829-6B88-468DC75B8C9E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FD4F1200-0622-3E6B-A527-1B8D8567AE56</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

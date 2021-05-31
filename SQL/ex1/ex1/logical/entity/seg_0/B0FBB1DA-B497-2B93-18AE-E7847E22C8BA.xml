@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0FBB1DA-B497-2B93-18AE-E7847E22C8BA" name="T_SIP_PROJETO">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:01:54 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_projeto" id="D16472A8-FB10-F843-185B-1BD7AEA6952B">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:02:06 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_projeto" id="78308487-76ED-28FF-9368-4FB311273886">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:02:21 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_inicio" id="DDF73F66-0DB1-D692-F8A5-6BCBD6880675">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:02:36 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_termino" id="93512E90-6741-D68A-6DAC-20C47F9913E0">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:02:43 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73544699-E2EB-9ACA-FEEC-FBED678B3AF8" name="T_SIP_PROJETO PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:02:19 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D16472A8-FB10-F843-185B-1BD7AEA6952B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

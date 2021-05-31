@@ -1,0 +1,31 @@
+package checkpoint2;
+
+import java.util.Scanner;
+
+public class TesteCP2 {
+
+	public static void main(String[] args) {
+
+		Metodos metodos = new Metodos();
+		Scanner input = new Scanner(System.in);
+		int resposta;
+		
+		
+		System.out.printf("escolha uma opção: ");
+		resposta = input.nextInt();
+		
+		while (resposta != 0) {
+			resposta = input.nextInt();
+			
+			if(resposta == 1) {
+				metodos.calculaAritimetica();
+			} else if (resposta == 2) {
+				metodos.calculaMediaPonderada();
+			} else if (resposta == 3) {
+				metodos.operacoesBasicas();
+			}
+			
+		}
+	}
+
+}

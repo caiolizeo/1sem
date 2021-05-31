@@ -1,0 +1,13 @@
+package challenge;
+
+public class Chat {
+	private long chatId;
+	private long userId;
+	private String foto;
+	private String msg;
+	
+	public Chat(long userId, String msg) {
+		this.userId = userId;
+		this.msg = msg;
+	}
+}

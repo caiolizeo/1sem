@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D3B266A-C2F0-601A-6089-289EC2008493" name="T_SPV_UNID_CML">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:15:08 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_unid_cml" id="0D0DDA1D-4EAD-337E-7077-DCF86CCF449E">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:15:21 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_unid_cml" id="D6A8D375-42B4-1DEF-7A9F-C0D80CF5C537">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:15:36 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_unid_cml" id="E71D56DC-E902-F9AC-FA6E-43E3520A8460">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:15:46 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD551375-FBF8-1DB9-BA64-8CC66F74CB4D" name="T_SPV_UNID_CML PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:16:09 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D0DDA1D-4EAD-337E-7077-DCF86CCF449E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,21 @@
+package challenge;
+
+public class Publicacao {
+	private long pubId;
+	private long userId;
+	private String data;
+	private String tema;
+	private String status;
+	private String conteudo;
+	private String video;
+	private String img;
+	
+	public Publicacao(long userId, String data, String tema, String status, String conteudo) {
+		this.pubId = 213165;
+		this.userId = userId;
+		this.data = data;
+		this.tema = tema;
+		this.status = status;
+		this.conteudo = conteudo;
+	}
+}

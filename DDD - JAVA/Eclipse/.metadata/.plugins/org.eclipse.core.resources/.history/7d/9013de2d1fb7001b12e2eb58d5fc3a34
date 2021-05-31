@@ -1,0 +1,12 @@
+package challenge;
+
+public class Publicacao {
+	private long idPublicacao;
+	private long userId;
+	private String data;
+	private String tema;
+	private String status;
+	private String conteudo;
+	private String video;
+	private String foto;
+}

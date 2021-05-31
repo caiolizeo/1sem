@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1EDC9BEB-FA2F-7F9B-E438-96A6AC582F2C" name="T_SIP_IMPLANTACAO">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:02:58 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_projeto" id="45F3AB21-AEE5-A2FC-D8CF-4A4EF609FC14">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-26 14:10:55 UTC</createdTime>
+<generatorID>61E5998A-7A5A-0D95-845A-34A0E11792DA</generatorID>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<referedAttribute>D16472A8-FB10-F843-185B-1BD7AEA6952B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_implantacao" id="8D4D60E7-3F2F-353A-F00A-8AD8468D1226">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:03:15 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_matricula" id="A8BB65EA-964D-8B13-3D2C-5827D73A37C8">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-26 14:10:04 UTC</createdTime>
+<generatorID>6C391609-3A96-F8A7-B07E-5E5E1E6B194D</generatorID>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<referedAttribute>A2CDC7AF-174A-BC91-0C75-F7A7031C1332</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_entrada" id="B1B72C63-A155-4DD5-BF13-899A7AB0F78D">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:03:23 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_saida" id="B9F6C42E-9AAA-181B-2D04-0BFD4AB34795">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:03:44 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_dependente" id="A44DDF6C-8294-1C22-FB45-24441F58A0C9">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-26 14:10:04 UTC</createdTime>
+<generatorID>6C391609-3A96-F8A7-B07E-5E5E1E6B194D</generatorID>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<referedAttribute>DBC1BD09-B8B9-BB15-1636-CFB68CD77BDF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8785DDEF-F602-331B-4145-716964BDED02" name="T_SIP_IMPLANTACAO PK">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:03:22 UTC</createdTime>
+<ownerDesignName>ex1</ownerDesignName>
+<engineerTo>
+<item key="C23645E8-CB98-38D7-B866-B3CB357E6CAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8D4D60E7-3F2F-353A-F00A-8AD8468D1226</attributeRef>
+<attributeRef>45F3AB21-AEE5-A2FC-D8CF-4A4EF609FC14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

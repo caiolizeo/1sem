@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="relacionamentos" id="A0405174-A6D1-E079-53CC-4AC9D967B44D" version="3.5">
+<createdBy>caio-</createdBy>
+<createdTime>2021-05-05 13:40:50 UTC</createdTime>
+<ownerDesignName>relacionamentos</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A0405174-A6D1-E079-53CC-4AC9D967B44D</designId>
+</OSDM_Design>

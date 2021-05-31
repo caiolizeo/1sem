@@ -1,0 +1,23 @@
+print("+ + + + + + + + + + + + + + + + + + + +")
+print("+             Menu de opções          +")
+print("+ + + + + + + + + + + + + + + + + + + +")
+print("+       1 - Somar dois números        +")
+print("+    2 - Raiz quadrada de um número   +")
+print("+ + + + + + + + + + + + + + + + + + + +")
+print("")
+opcao = int(input("Digite a opção desejada --> "))
+
+if(opcao == 1):
+    print("")
+    print("Opção 1: Somar dois números")
+    num1 = float(input("Digite o primeiro número --> "))
+    num2 = float(input("Digite o segundo número --> "))
+    print("")
+    print("O resultado da soma é: {:.2f}".format(num1+num2))
+elif(opcao == 2):
+    print("")
+    print("Opção 1: Raiz quadrada de um número")
+    num = float(input("Digite o número --> "))
+    raiz = num ** (1/2) 
+    print("")
+    print("A raíz quadrada de {:.2f} é {:.2f}.".format(num, raiz))

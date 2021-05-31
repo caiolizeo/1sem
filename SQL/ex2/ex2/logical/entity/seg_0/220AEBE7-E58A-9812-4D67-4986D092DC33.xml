@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="220AEBE7-E58A-9812-4D67-4986D092DC33" name="T_SPV_ITEM_NF">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:26:28 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="qt_comercializada" id="73537E54-B6F6-698B-D751-90BD07BD84D5">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:26:43 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_preco_unitario" id="145D2F40-118A-F239-AC4F-6A8C9FAD23C4">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:26:55 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_preco_total_item" id="58EF7B98-CC2E-4C00-79EB-4089251023E5">
+<createdBy>caio-</createdBy>
+<createdTime>2021-04-28 14:27:05 UTC</createdTime>
+<ownerDesignName>ex2</ownerDesignName>
+<engineerTo>
+<item key="49322ABB-E329-5DFC-57F0-C9B8EF7EFC3C" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
