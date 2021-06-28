@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulliver - Como Chegar</title>
 
+    <!--Titulo Da Pagina | Icon Da Pagina-->
+    <title>Gulliver - Como Chegar</title>
+    <link rel="shortcut icon" href="./img/gulliver.ico"/>
+
+    <!-- 1 - CSS; 2 - CSS IMPORT -->
     <link rel="stylesheet" href="./css/comoChegar.css">
+    <style> @import url('./css/geral.css'); </style>
+
+    <!--BootStrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <style> @import url('./css/geral.css'); </style>
 </head>
 <body>
     
-<div class="cor">    
+<div class="cor1">    
     <!--Nav-->
-    <div class="topnav-father">   
+    <div class="topnav-father">  
+        <!--Titulo + Icone No Navbar -->  
         <div class="topnav-name">
             <img src="./img/gulliver.svg" alt="Logo Gulliver">
-            <a class="navbar-brand active" href="./index.html">
+            <a class="navbar-brand" href="./index.html">
                  Gulliver Traveller
             </a>
         </div>
+
+        <!--Opções Do NavBar-->
         <div class="topnav">
             <div class="textnav">        
                 <a href="./comoChegar.html">Como Chegar</a>
@@ -47,28 +56,33 @@
     <!--Titulo-->
     <div class="topo">
         <h1>Como chegar em São Paulo</h1>
-        <p>Clique no meio de transporte desejado</p>
+        <h5>Clique no meio de transporte desejado</h5>
     </div>
 
     <!--BOTAO-->
-    <div class="buttons">
+    <div>
         <div class="temasButton">
-            <button type="button" class="HashButton button_sld sld_down"> <a id="text" href="./transporte/aviao.html"><img class="icone" src="../img/airplane.svg" alt="Avião" title="Avião"></a></button>
-            
+            <a id="text" href="./transporte/aviao.html">
+                <button type="button" class="HashButton button_sld sld_down"> <img class="icone" src="./img/airplane.svg" alt="Avião" title="Avião"></button>
+            </a>   
         </div>
         <h1 class="temasButton titulo-classe">Avião</h1>
         <div class="temasButton">
-            <button type="button" class="HashButton button_sld sld_down"> <a id="text" href="./transporte/carro.html"><img class="icone" src="../img/car.svg" alt="Carro" title="Carro"></a></button>
-            
+            <a id="text" href="./transporte/carro.html">
+                <button type="button" class="HashButton button_sld sld_down"> <img class="icone" src="./img/car.svg" alt="Carro" title="Carro"></button>
+            </a>
         </div>
         <h1 class="temasButton titulo-classe">Carro</h1>
-        <div class="temasButton">    
-            <button type="button" class="HashButton button_sld sld_down"> <a id="text" href="./transporte/onibus.html"><img class="icone" src="../img/bus.svg" alt="Ônibus" title="Ônibus"></a></button>
+        <div class="temasButton">  
+            <a id="text" class ="bus" href="./transporte/onibus.html">  
+                <button type="button" class="HashButton button_sld sld_down"> <img class="icone" src="./img/bus.svg" alt="Ônibus" title="Ônibus"></button>
+            </a>
+            
         </div>
-        <h1 class="temasButton titulo-classe">Ônibus</h1>
+        <h1 id="bus" class="temasButton titulo-classe">Ônibus</h1>
         
     </div>
-    
+
 </div>
 
 </body>

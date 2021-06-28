@@ -26,7 +26,6 @@
 
 .topo {
   text-align: center;
-  width: 100%;
   height: 80px;
   margin-top: 40px;
   margin-bottom: 5px;
@@ -34,7 +33,7 @@
 }
 
 #titulo{
-  padding: 15px;
+  text-align: center;
   font-size: 46px;
   font-family: 'Staatliches', cursive;
   
@@ -91,7 +90,7 @@ iframe{
 }
 
 .displayCard{
-  margin-left: 5%;
+  
   background-color: #0d1418;
 }
 
@@ -180,5 +179,9 @@ p a:hover{
 
   .botaoEnviar{
     width: 100%;
+  }
+
+  #fiesp{
+    padding-bottom: 105px;
   }
 }

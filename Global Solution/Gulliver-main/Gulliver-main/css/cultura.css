@@ -1,3 +1,4 @@
+/*ESTRELAS - AVALIAÇÃO DO LOCAL*/
 .estrelas input[type=radio] {
   display: none;
 }
@@ -9,7 +10,13 @@
   color: #CCC;
 }
 
-/*CARDS*/
+.estrelas1{
+  font-size: 25px;
+  color: #FC0;
+}
+
+
+/*CARDS DOS LOCAIS*/
 .displayCard{
   display: flex;
   justify-content: center;
@@ -17,14 +24,6 @@
   flex-wrap: wrap;
   background-color: #0d1418;
 }
-
-.imagem{
-  height: auto;
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 
 .child_container{
   margin-left: 25px;
@@ -37,9 +36,29 @@
   border-radius: 5px;
 }
 
+/*ÚLTIMO CARD*/
+#container-final{
+  margin-bottom: 25px;
+}
+
+
+/*IMAGEM DO CARD*/
+.imagem{
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/*NOME DO LOCAL*/
 #titulo{
   text-decoration: none;
   color: rgb(165, 186, 214);
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+#title {
+  font-family: 'Staatliches', cursive;
 }
 
 #titulo:hover{
@@ -47,26 +66,19 @@
   color: rgb(83, 114, 155); 
 }
 
-.estrelas1{
-  font-size: 25px;
-  color: #FC0;
-}
-
-.topo {
+/*NOME DA PÁGINA*/
+.topo{
   text-align: center;
   padding-top: 2%;
-  
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 
 @media(max-width: 720px){
   .topo {
-
     padding-top: 8%;
-    
+    background-color: #0d1418;
+    padding-bottom: 20px;
   }
 
-  #container-final{
-    margin-bottom: 25px;
-  }
+  
 }
-

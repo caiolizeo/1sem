@@ -1,56 +1,35 @@
 
-/*TITULO*/
+/*TITULO SP*/
 
 .topo {
     text-align: center;
     margin-top: 30px;
-    
+    font-family: 'Staatliches', cursive;
 }
 
-.descricao{
-    text-align: justify;
-}
-
-
-/*Conteudo*/
-#textMargin1{
-    width: 100%;
-    margin-left: 50vh;
-}
-
-.rodoviaria{
-    width: 50%;
-    height: auto;
-}
-
-/*TITULO*/
-
-.topo {
+/*TITULO CARRO*/
+.titulo{
     text-align: center;
-    margin-top: 30px;
-    
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: 'Staatliches', cursive;
 }
 
-#aviao{
-    background-color: #7206d6;
-}
-
-/*Cor de fundo*/
+/*PÁGINA INTEIRA*/
 .cor1{  
-  height: 146vh;
-  background-color: rgba(13, 20, 24);
-  color: #d6d5d5;
-}
+    background-color: rgba(13, 20, 24);
+    color: #d6d5d5;
+    font-family: 'Baloo Tammudu 2', cursive;
+  }
 
-
-/*BOTAO ICON*/
+/*BOTÃO ÍCONE CARRO/AVIÃO/ÔNIBUS*/
 #borderTe{
     width: 100%;
     background-color: #ffffff29;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 
 /*CARDS*/
 
@@ -60,43 +39,6 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     background-color: rgba(13, 20, 24);
-
-}
-
-.card{
-    width: 28rem; 
-    margin-left: 23px;  
-}
-
-.descricao{
-    font-size: 16px;
-    text-align: justify;
-}
-
-.card-body{
-    height: 45vh;
-    background-color: #3b4044;
-}
-
-.img{
-    height: 43vh; 
-
-}
-
-.imagem{
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.descricao{
-    font-size: 16px;
-}
-
-.container{
-    display: flex;
-    margin: auto;
-    width: 1%;  
 }
 
 .child_container{
@@ -108,22 +50,33 @@
     background-color: #3b4044;
     border: 2px solid #585858;
     border-radius: 5px;
+    margin-bottom: 100px;
 }
 
+/*Google Maps*/
 .foto iframe{
     width: 100%;
-    height: 300px;
+    height: 270px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-p a{
-    text-decoration: none;
-    color: rgb(165, 186, 214);
+/*Corpo Card*/
+.card-body{
+    height: 30vh;
+    background-color: #3b4044;
 }
 
-p a:hover{
-    text-decoration: none;
-    color: rgb(83, 114, 155);
+/*Desc Do Card*/
+.descricao{
+    font-size: 16px;
+    text-align: justify;
     
+    display: flex;
+}
+
+@media(max-width: 720px){
+    .card-body{
+        height:auto;
+    }
 }

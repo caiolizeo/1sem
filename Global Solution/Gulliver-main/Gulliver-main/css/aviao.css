@@ -1,33 +1,27 @@
-
-/*Conteudo*/
-#textMargin1{
-    width: 100%;
-    margin-left: 50vh;
+/*TÍTULO DA PÁGINA*/
+.titulo{
+    text-align: center;
+    height: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: 'Staatliches', cursive;
 }
 
-.rodoviaria{
-    width: 50%;
-    height: auto;
-}
-
-/*TITULO*/
-
-.topo {
+/*TITULO AVIAO*/
+.topo{
     text-align: center;
     margin-top: 30px;
-    
 }
 
-#aviao{
-    background-color: #7206d6;
-}
 
+/*PÁGINA INTEIRA*/
 .cor1{  
   background-color: rgba(13, 20, 24);
   color: #d6d5d5;
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 
-/*BOTAO ICON*/
+/*BOTÃO ÍCONE CARRO/AVIÃO/ÔNIBUS*/
 #borderTe{
     width: 100%;
     background-color: #ffffff29;
@@ -35,8 +29,7 @@
     margin-bottom: 20px;
 }
 
-/*CARDS*/
-
+/*CARDS DOS AEROPORTOS*/
 .displayCard{
     display: flex;
     justify-content: center;
@@ -45,9 +38,27 @@
     background-color: rgba(13, 20, 24);
  }
 
-.card{
-    width: 28rem; 
-    margin-left: 23px;  
+.child_container{
+    margin: 25px;
+    display: inline-block;
+    width: 400px;
+    background-color: #3b4044;
+    border: 2px solid #585858;
+    border-radius: 5px;
+
+}
+
+/*CARD IMAGEM*/
+.imagem{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/*ÁREA DE TEXTO DOS CARDS*/
+.card-body{
+    background-color: #3b4044;
 }
 
 .descricao{
@@ -55,51 +66,16 @@
     text-align: justify;
 }
 
-.card-body{
-    height: 45vh;
-    background-color: #3b4044;
-}
 
-.img{
-    height: 43vh; 
-
-}
-
-.imagem{
-    width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.descricao{
-    font-size: 16px;
-}
-
-.container{
-    display: flex;
-    margin: auto;
-    width: 90%;  
-
-}
-
-.child_container{
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 25px;
-    display: inline-block;
-    width: 400px;
-    height: 670px;
-    background-color: #3b4044;
-    border: 2px solid #585858;
-    border-radius: 5px;
-}
+/*LINKS*/
 p a{
     text-decoration: none;
-    color: rgb(165, 186, 214);
+    color: rgb(238, 137, 43);
 }
 
 p a:hover{
     text-decoration: none;
-    color: rgb(83, 114, 155);
+    color: rgb(233, 120, 15);
     
 }
+

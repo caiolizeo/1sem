@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Titulo Da Pagina | Icon Da Pagina-->
     <title>Gulliver - Cultura</title>
-
+    <link rel="shortcut icon" href="./img/gulliver.ico"/>
+    
+    <!-- 1 - CSS; 2 - CSS IMPORT -->
     <link rel="stylesheet" href="./css/cultura.css">
+    <style> @import url('./css/geral.css'); </style>
+    
+    <!--BootStrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
- 
-    <style> @import url('./css/geral.css'); </style>
+   
 </head>
 <body>
     
 <div class="cor">
+
     <!--Nav-->
-    <div class="topnav-father">   
+    <div class="topnav-father">
+        <!--Titulo + Icone No Navbar -->    
         <div class="topnav-name">
             <img src="./img/gulliver.svg" alt="Logo Gulliver">
-            <a href="./index.html">
+            <a class="navbar-brand" href="./index.html">
                  Gulliver Traveller
             </a>
         </div>
+
+        <!--Opções Do NavBar-->
         <div class="topnav">
             <div class="textnav">        
                 <a href="./comoChegar.html">Como Chegar</a>
@@ -45,33 +55,42 @@
         </div>
     </div>
 
-    <!--BOTAO-->
+    <!--TÍTULO-->
 
     <div class="topo">
-        <h1>Cultura</h1>
+        <h1 id="title">Cultura</h1>
+        <div>
+        <p>A Cidade de São Paulo é incrível e possui muitos lugares para visitar. </p>
+        <p>São mais de 135 museus, 294 salas de teatro, 376 cinemas e  113 Centros culturais!</p> 
+        </div>
     </div>
 
-      
+    <!--CARDS DOS LOCAIS CULTURAIS-->
     <div class="displayCard">
         <div class="child_container">
+
+            <!--IMAGEM DO LOCAL-->
             <div class="foto">
                 <a href="./lugares/masp.html">
                 <img class="imagem" src="https://cdn.discordapp.com/attachments/820060898210873348/852634203702558800/masp.jpg" alt="masp" title="masp">  
                 </a> 
             </div>
-        
+            
+            <!--NOME DO LOCAL-->
             <div class="card-body">
                 <h5 class="card-title">
                     <a id="titulo" href="./lugares/masp.html">MASP</a>
                 </h5>
 
+                <!--AVALIAÇÃO DO LOCAL-->
                 <div class="estrelas1">
                     ★ ★ ★ ★ ★
                 </div>
                 
             </div>
         </div>
-
+        
+        
         <div class="child_container">
             <div class="foto">
                 <a href="./lugares/itau-cultural.html">
@@ -84,6 +103,7 @@
                     <a id="titulo" href="./lugares/itau-cultural.html">Itaú Cultural</a>
                 </h5>
 
+                
                 <div class="estrelas1">
                     ★ ★ ★ ★ ★
                 </div>
@@ -91,6 +111,7 @@
             </div>
         </div>
 
+        
         <div class="child_container">
             <div class="foto">
                 <a href="./lugares/fiesp.html">
@@ -169,14 +190,14 @@
 
         <div id="container-final" class="child_container">
             <div class="foto">
-                <a href="./lugares/gazeta.html">
+                <a href="./lugares/teatro-gazeta.html">
                 <img class="imagem" src="https://cdn.discordapp.com/attachments/820060898210873348/852637542758875146/teatro_gazeta.jpg" alt="Teatro Gazeta" title="Teatro Gazeta">  
                 </a> 
             </div>
         
             <div class="card-body">
                 <h5 class="card-title">
-                    <a id="titulo" href="./cultura.html">Teatro Gazeta</a>
+                    <a id="titulo" href="./lugares/teatro-gazeta.html">Teatro Gazeta</a>
                 </h5>
 
                 <div class="estrelas1">
