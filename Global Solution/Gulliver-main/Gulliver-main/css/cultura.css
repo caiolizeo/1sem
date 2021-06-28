@@ -1,0 +1,72 @@
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+
+/*CARDS*/
+.displayCard{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #0d1418;
+}
+
+.imagem{
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+.child_container{
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  display: inline-block;
+  width: 350px;
+  background-color: #3b4044;
+  border: 2px solid #585858;
+  border-radius: 5px;
+}
+
+#titulo{
+  text-decoration: none;
+  color: rgb(165, 186, 214);
+}
+
+#titulo:hover{
+  text-decoration: none;
+  color: rgb(83, 114, 155); 
+}
+
+.estrelas1{
+  font-size: 25px;
+  color: #FC0;
+}
+
+.topo {
+  text-align: center;
+  padding-top: 2%;
+  
+}
+
+@media(max-width: 720px){
+  .topo {
+
+    padding-top: 8%;
+    
+  }
+
+  #container-final{
+    margin-bottom: 25px;
+  }
+}
+

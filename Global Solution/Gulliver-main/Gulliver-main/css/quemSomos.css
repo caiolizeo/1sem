@@ -1,0 +1,136 @@
+
+/*TITULO*/
+
+.topo {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.descricao{
+    text-align: justify;
+}
+
+
+/*Conteudo*/
+#textMargin1{
+    width: 100%;
+    margin-left: 50vh;
+}
+
+.rodoviaria{
+    width: 50%;
+    height: auto;
+}
+
+/*TITULO*/
+
+.topo {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+#aviao{
+    background-color: #7206d6;
+}
+.cor1{  
+  height: 146vh;
+  background-color: rgba(13, 20, 24);
+  color: #d6d5d5;
+}
+
+/*BOTAO ICON*/
+#borderTe{
+    width: 100%;
+    background-color: #ffffff29;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*CARDS*/
+
+.displayCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(13, 20, 24);
+ }
+
+.card{
+    width: 20rem; 
+    margin-left: 23px;  
+}
+
+.descricao{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.card-body{
+    height: 100%
+    background-color: #3b4044;
+}
+
+.img{
+    height: 43vh; 
+
+}
+
+.imagem{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.descricao{
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    width: 1%;  
+}
+
+.child_container{
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    display: inline-block;
+    width: 350px;
+    background-color: #3b4044;
+    border: 2px solid #585858;
+    border-radius: 5px;
+}
+
+.foto{
+    width: 100%;
+    height: auto;
+}
+
+.titulo{
+    font-size: 25px;
+}
+.foto iframe{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+p a{
+    text-decoration: none;
+    color: rgb(165, 186, 214);
+}
+
+p a:hover{
+    text-decoration: none;
+    color: rgb(83, 114, 155);
+    
+}
+
+
+

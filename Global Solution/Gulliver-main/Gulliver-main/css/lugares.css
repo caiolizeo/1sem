@@ -1,0 +1,184 @@
+/*COR DE FUNDO*/
+
+.cor1{  
+  background-color: rgba(13, 20, 24);
+  color: #d6d5d5;
+}
+
+/*ESTRELAS */
+.estrelas input[type=radio] {
+  display: none;
+  
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+
+}
+.estrelas{
+  margin-top: 10px;
+}
+
+/*TITULO*/
+
+.topo {
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  background-color: hsla(0, 0%, 100%, 0.048);
+}
+
+#titulo{
+  padding: 15px;
+  font-size: 46px;
+  font-family: 'Staatliches', cursive;
+  
+}
+
+/*CARDS*/
+
+
+.card{
+  width: 28rem; 
+  margin-left: 23px;  
+}
+
+.descricao{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.card-title{
+  margin-top: 20px;
+  color: rgb(238, 137, 43);
+}
+
+.card-body{
+  height: 130vh;
+  width: 100%;
+}
+
+
+.imagem{
+  height: auto;
+  width: 100%;
+
+}
+
+.descricao{
+  font-size: 16px;
+  text-align: justify;
+}
+
+.child_container{
+  margin-right: 25px;
+  margin-top: 25px;
+  display: inline-block;
+  width: 50%;
+  margin-left: 25%;
+
+  border-radius: 5px;
+}
+
+iframe{
+  width: 100%;
+  height: 40vh;
+}
+
+.displayCard{
+  margin-left: 5%;
+  background-color: #0d1418;
+}
+
+.estrelas1{
+  font-size: 30px;
+  color: #FC0;
+}
+
+.estrelas2{
+  font-size: 20px;
+  color: #FC0;
+}
+
+
+.avaliacao{
+  display: flex;
+  margin-top: 60px;
+}
+
+.hr-aval{
+  width: 5px;
+
+}
+
+.container-avaliacao{
+  margin-left: 20px;
+}
+
+.profile-pic{
+  width: 50px;
+  height: 50px;
+}
+
+.deixarAvaliacao{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#avaliar{
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+ 
+}
+
+.container-avaliacao p{
+  font-size: 22px;
+}
+
+.comentario {
+  text-align: justify;
+}
+.botaoEnviar{
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff29;
+  color: #d6d5d5;
+  border-radius: 5px;
+  border: 2px solid #ffffff29;
+  width: 80px;
+}
+
+.botaoEnviar:hover{
+  background-color: #ffffff1a;
+}
+
+p a{
+  text-decoration: none;
+  color: rgb(238, 137, 43);
+}
+
+p a:hover{
+  text-decoration: none;
+  color: rgb(172, 95, 24);
+  
+}
+
+@media(max-width: 1200px){
+
+  .child_container{
+    margin-left: 2%;
+    width: 90%;
+  }
+
+  .botaoEnviar{
+    width: 100%;
+  }
+}

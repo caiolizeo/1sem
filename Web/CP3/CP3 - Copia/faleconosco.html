@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/index.css">
+    
+  </head>
+<body>
+
+
+<div class="topnav">          
+    <div class="textnav">
+      <div><a id="index" href="./index.html">Index</a></div>
+      <div><a href="./novocadastrologin.html">Novo Cadastro</a></div>
+      <div><a href="./faleconosco.html">Fale Conosco</a></div>
+      <div><a href="./portal.html">Portal</a></div>
+    </div>
+</div>
+<div class="container">
+  <div class="child_container">
+    <h1 class="th1">Fale Conosco</h1> 
+    <div> 
+      <label for="assunto">Assunto</label>
+      <input class="entrada" id="assunto" minlength="1" name="assunto_faleConosco" required="required" type="text" placeholder="Digite o assunto"/>
+    </div>
+    
+    <div> 
+      <label for="nome">Nome</label>
+      <input class="entrada" id="nome" minlength="1" name="nome_faleConosco" required="required" type="text" placeholder="Digite seu nome" /> 
+    </div>
+    
+    
+    <div>
+        <label for="comentario">Comentário</label>
+        <textarea class="entrada" id="comentario" minlength="1" rows="3"></textarea>
+      </div>
+
+    <div> 
+      <input id="btn_submit" class="entrada" type="submit" value="Enviar" /> 
+    </div>
+    
+    <div>
+      <p class="p_cadastro">Ainda não tem conta?</p>
+      <a href="./novocadastrologin.html"><input class="entrada" id="cadastro" type="submit" value="Cadastre-se" /></a>
+    </div> 
+</div>
+</div>
+
+</body>
+</html>
+
+
+<script src="./js/script.js"></script>
+<script>
+  pag_faleconosco();
+</script>

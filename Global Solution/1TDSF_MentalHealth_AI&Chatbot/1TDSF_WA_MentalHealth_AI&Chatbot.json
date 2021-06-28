@@ -1,0 +1,1269 @@
+{
+  "intents": [
+    {
+      "intent": "ComoChegar",
+      "examples": [
+        {
+          "text": "Como chegar"
+        },
+        {
+          "text": "Como chego em São Paulo?"
+        },
+        {
+          "text": "Como ir"
+        },
+        {
+          "text": "De que forma posso chegar em São Paulo?"
+        },
+        {
+          "text": "Me ajude a chegar"
+        },
+        {
+          "text": "Me ajude a chegar em São Paulo"
+        },
+        {
+          "text": "Qual a melhor forma para chegar em São Paulo?"
+        },
+        {
+          "text": "Qual a rota até São Paulo?"
+        },
+        {
+          "text": "Qual o melhor trajeto para São Paulo?"
+        },
+        {
+          "text": "Qual o trajeto para chegar em São Paulo?"
+        },
+        {
+          "text": "Quero chegar em Sao Paulo"
+        }
+      ],
+      "description": "Mostra como chegar até São Paulo, de ônibus, avião e carro."
+    },
+    {
+      "intent": "LocaisCulturais",
+      "examples": [
+        {
+          "text": "Conhecer locais"
+        },
+        {
+          "text": "Locais culturais para conhecer"
+        },
+        {
+          "text": "Locais para visitar"
+        },
+        {
+          "text": "Quais locais posso visitar em São Paulo?"
+        },
+        {
+          "text": "Quais são os locais culturais?"
+        },
+        {
+          "text": "Quero conhecer algum local"
+        },
+        {
+          "text": "Quero conhecer os locais culturais de São Paulo"
+        }
+      ],
+      "description": "Mostra lista de locais culturais"
+    },
+    {
+      "intent": "Saudação",
+      "examples": [
+        {
+          "text": "Como vai?"
+        },
+        {
+          "text": "Como vai voce?"
+        },
+        {
+          "text": "Como você está?"
+        },
+        {
+          "text": "e aí"
+        },
+        {
+          "text": "Oi, tudo bem?"
+        },
+        {
+          "text": "Oi, tudo joia?"
+        },
+        {
+          "text": "Opa"
+        },
+        {
+          "text": "Tudo beleza?"
+        },
+        {
+          "text": "Tudo bom?"
+        }
+      ],
+      "description": "Captura intenção de saudação do usuário"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Aeroporto",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Aeroporto de Congonhas",
+          "synonyms": [
+            "Congonhas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Aeroporto de Guarulhos",
+          "synonyms": [
+            "Cumbica",
+            "GRU",
+            "Guarulhos",
+            "Internacional"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Cultura",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Caixa Belas Artes",
+          "synonyms": [
+            "belas artes",
+            "caixa belas artes",
+            "petra",
+            "petra belas artes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Casa das Rosas",
+          "synonyms": [
+            "casa rosas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Centro Cultural FIESP",
+          "synonyms": [
+            "centro cultural",
+            "FIESP",
+            "Ruth Cardoso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Conjunto Nacional",
+          "synonyms": [
+            "conj nacional",
+            "conjunto",
+            "nacional"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Itaú Cultural",
+          "synonyms": [
+            "itau",
+            "itau cultural"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MASP",
+          "synonyms": [
+            "masp"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Teatro Gazeta",
+          "synonyms": [
+            "teatro",
+            "teatro gazeta"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Item_menu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Início",
+          "synonyms": [
+            "começo",
+            "iniciar",
+            "inicio",
+            "retornar",
+            "retorno",
+            "volta",
+            "voltar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lugar",
+          "synonyms": [
+            "lugar",
+            "lugar cultural",
+            "mais um lugar",
+            "outro lugar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Meio de transporte",
+          "synonyms": [
+            "meio",
+            "Meio de transporte",
+            "outro meio",
+            "transporte"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "MeioTransporte",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Avião",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carro",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ônibus",
+          "synonyms": [
+            "bus",
+            "busão",
+            "onibus"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "OiTchau",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Oi",
+          "synonyms": [
+            "Boa noite",
+            "Boa tarde",
+            "Bom dia",
+            "E aí",
+            "Oba",
+            "Oie",
+            "Olá",
+            "Opa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tchau",
+          "synonyms": [
+            "Até breve",
+            "Até logo",
+            "Até mais",
+            "Bye",
+            "encerrar",
+            "Falou",
+            "Fui",
+            "sair",
+            "Tchau",
+            "Xau"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Rodoviaria",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Rodoviária da Barra Funda",
+          "synonyms": [
+            "Barra Funda",
+            "BF"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rodoviária do Tietê",
+          "synonyms": [
+            "Tiete"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rodoviária Jabaquara",
+          "synonyms": [
+            "Jabaquara"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SimNao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Não",
+          "synonyms": [
+            "n",
+            "não",
+            "naum",
+            "negativo",
+            "nem"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sim",
+          "synonyms": [
+            "aham",
+            "beleza",
+            "claro",
+            "ok",
+            "por favor",
+            "sim",
+            "uhum"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Oi, amigo! Eu sou o Assistente do Gulliver 😄"
+              },
+              {
+                "text": "Sobre o que você quer conversar? Podemos falar sobre: "
+              },
+              {
+                "text": "🗺️ Como chegar em São Paulo"
+              },
+              {
+                "text": "🏙️ Locais culturais para visitar em São Paulo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "welcome || #Saudação && @OiTchau:Oi",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi 😔 Você pode tentar reformular a frase? "
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo 😔"
+              },
+              {
+                "text": "Eu não entendi o sentido 😔"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_7_1623344320882",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Cultura",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Em São Paulo há uma diversidade de locais culturais para se visitar 🤩"
+              },
+              {
+                "text": "São mais de 135 museus, 294 salas de teatro, 376 cinemas e  113 Centros culturais!"
+              },
+              {
+                "text": "Quer saber alguns deles?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#LocaisCulturais",
+      "dialog_node": "node_10_1623113732168",
+      "previous_sibling": "node_1_1623111790657"
+    },
+    {
+      "type": "standard",
+      "title": "Rodoviária Jabaquara",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🚍 O Terminal Intermunicipal do Jabaquara, também conhecido como Rodoviária Jabaquara, foi inaugurado em 1977 e recebe passageiros dos transportes rodoviário e metroviário de São Paulo. A rodoviária conta com 24 plataformas de embarque e desembarque e recebe cerca de 15.000 pessoas diariamente. Fica a 15,4 km do centro da Cidade."
+              },
+              {
+                "text": "✅ Saiba mais clicando no link: https://www.rodoviariadojabaquara.com.br/"
+              },
+              {
+                "text": "Você deseja saber como chegar por outro meio de transporte ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1623340313549",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Rodoviaria:(Rodoviária Jabaquara)",
+      "dialog_node": "node_10_1623340313549",
+      "previous_sibling": "node_9_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "Como Chegar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual será o meio de transporte?"
+              },
+              {
+                "text": "Carro, Avião ou Ônibus?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#ComoChegar ||  @Item_menu:(Meio de transporte)",
+      "dialog_node": "node_1_1623111790657",
+      "previous_sibling": "node_9_1623338801024"
+    },
+    {
+      "type": "standard",
+      "title": "Lista de Locais - copy 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Posso te falar um pouco sobre:"
+              },
+              {
+                "text": "🏙️ MASP"
+              },
+              {
+                "text": "🏙️ Itaú Cultural"
+              },
+              {
+                "text": "🏙️ Centro Cultural FIESP (Ruth Cardoso)"
+              },
+              {
+                "text": "🏙️ Casa das Rosas"
+              },
+              {
+                "text": "🏙️ Petra Belas Artes"
+              },
+              {
+                "text": "🏙️ Conjunto Nacional e "
+              },
+              {
+                "text": "🏙️ Teatro Gazeta"
+              },
+              {
+                "text": "Sobre qual local você deseja mais informações?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@SimNao:Sim || @Item_menu:Lugar",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1623362309011",
+      "previous_sibling": "node_10_1623113732168"
+    },
+    {
+      "type": "standard",
+      "title": "Carro",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🚗Para chegar em São Paulo de carro, as principais rodovias são: Anchieta e Imigrantes, (para quem vem do Porto de Santos); Bandeirantes, que liga a cidade a Campinas; Castelo Branco, para o interior de São Paulo; Anhanguera, para quem vem de Uberlândia e Distrito Federal; Fernão Dias, que faz ligação com o sul de Minas; Ayrton Senna e Presidente Dutra, para percursos até o Rio de Janeiro; e a Régis Bittencourt para conexões com cidades do Sul."
+              },
+              {
+                "text": "✅ Você pode clicar no link para inserir sua origem e visualizar uma rota:  https://goo.gl/maps/KKiowKx3Dobo5YRD7 "
+              },
+              {
+                "text": "Você deseja saber como chegar por outro meio de transporte ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623111790657",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@MeioTransporte:Carro",
+      "dialog_node": "node_2_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "MASP",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ O Museu de Arte de São Paulo é um museu privado e foi inaugurado por Assis Chateaubriand em 1947, possui um acervo impressionante com mais de 10 mil obras de artistas brasileiros e estrangeiros, que datam desde o século 19 até os dias de hoje. Durante uma visita ao MASP você pode passear por 2 andares elevados, um térreo, onde fica o vão livre e mais 2 subsolos."
+              },
+              {
+                "text": "📌 Fica na Avenida Paulista, n º 1578, próximo à estação Trianon-MASP (linha verde do metrô)"
+              },
+              {
+                "text": "🕘 O horário de funcionamento aos sábados, domingos e  terças é das 10h às 18h, quartas das 12h às 18h e às segundas o espaço é fechado."
+              },
+              {
+                "text": "📅 O melhor dia para visitar é terça-feira (entrada grátis)"
+              },
+              {
+                "text": "🎫 Os preços variam de R$ 22 a R$ 45 (entrada gratuita para amigo MASP, menores de 11 anos, pessoas com deficiências e a todos na terça-feira)."
+              },
+              {
+                "text": "✅ As visitas devem ser agendadas no site: https://masp.byinti.com/"
+              },
+              {
+                "text": "ℹ Saiba mais no site oficial do MASP: https://masp.org.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:MASP",
+      "dialog_node": "node_2_1623362309014",
+      "previous_sibling": "response_10_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Itaú Cultural",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ Voltado para a pesquisa e a produção de conteúdo e para o mapeamento de manifestações artísticas, o Itaú Cultural está localizado num prédio Avenida Paulista. O local recebe até três exposições ao mesmo tempo. As Ocupações são mostras que trazem à luz trajetórias de músicos, atores, pensadores, artistas, entre outras pessoas que contribuíram para o conhecimento nacional. "
+              },
+              {
+                "text": "📌 Fica na Avenida Paulista, n º 149, próximo à estação Brigadeiro (linha verde do metrô)"
+              },
+              {
+                "text": "🕘 O horário de funcionamento é de terça a domingo das 12h às 18h"
+              },
+              {
+                "text": "📅 O melhor dia para visitar é domingo"
+              },
+              {
+                "text": "🎫 A entrada é grátis "
+              },
+              {
+                "text": "✅ Saiba mais e agende sua visita no site: https://www.itaucultural.org.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:(Itaú Cultural)",
+      "dialog_node": "node_3_1623362309014",
+      "previous_sibling": "node_2_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Avião",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na capital de São Paulo há dois principais aeroportos que recebem voos de muitas partes do Brasil e do mundo: Aeroporto de Congonhas e Aeroporto de Guarulhos."
+              },
+              {
+                "text": "✈️ Sobre qual aeroporto você deseja informações?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623111790657",
+      "conditions": "@MeioTransporte:Avião",
+      "dialog_node": "node_4_1623340313549",
+      "previous_sibling": "node_2_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "Menu",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Item_menu || @SimNao:Não",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1623349426438",
+      "previous_sibling": "node_1_1623362309011"
+    },
+    {
+      "type": "standard",
+      "title": "Centro Cultural FIESP (Ruth Cardoso)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ O complexo é formado pelo Teatro do Sesi-SP, espaço Mezanino, Galeria de Arte, Espaço de Exposições, Galeria de Fotos e Galeria de Arte Digital (instalada na fachada do prédio), onde são oferecidas inúmeras apresentações teatrais, shows musicais, oficinas, workshops, palestras, exposições e intervenções artísticas ao longo do ano."
+              },
+              {
+                "text": "📌 Fica na Avenida Paulista, n º 1313, próximo à estação Trianon-MASP (linha verde do metrô)"
+              },
+              {
+                "text": "🕘 O horário de funcionamento é de quinta e sexta das 13h às 19h"
+              },
+              {
+                "text": "📅 O melhor dia para visitar é sexta-feira"
+              },
+              {
+                "text": "🎫 Os ingressos são gratuitos, você pode reservar ingressos no site www.sesisp.org.br/meu-sesi."
+              },
+              {
+                "text": "ℹ Saiba mais no site oficial do Centro Cultural Fiesp http://centroculturalfiesp.com.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:(Centro Cultural FIESP)",
+      "dialog_node": "node_4_1623362309014",
+      "previous_sibling": "node_3_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Aeroporto de Congonhas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "✈️ O Aeroporto de Congonhas está realmente dentro da cidade de São Paulo e é o mais bem localizado para a maioria das pessoas. Ele fica ao lado de Moema e bem próximo de regiões importantes como a do Parque do Ibirapuera, Avenida Paulista e Jardins, abrangendo as zonas sul e oeste de São Paulo e fica a 8km do centro da cidade."
+              },
+              {
+                "text": "✅ Clique no link para acessar o site oficial: http://www.aeroportocongonhas.net/"
+              },
+              {
+                "text": "Você deseja saber como chegar por outro meio de transporte ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1623340313549",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Aeroporto:(Aeroporto de Congonhas)",
+      "dialog_node": "node_5_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "Casa das Rosas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ Um casarão no estilo clássico francês, localizado na Avenida Paulista. É dedicado a diversas manifestações culturais, com enfoque em literatura e poesia, na cidade de São Paulo. É um dos edifícios remanescentes da época característica da ocupação inicial de uma das principais vias da cidade. "
+              },
+              {
+                "text": "📌 Fica na Avenida Paulista, n º 37, próximo à estação Brigadeiro (linha verde do metrô)"
+              },
+              {
+                "text": "🕘 O horário de funcionamento é de quarta à sábado das 12h às 16h"
+              },
+              {
+                "text": "📅 O melhor dia para visitar é sábado"
+              },
+              {
+                "text": "🎫 Os ingressos são gratuitos, você deve agendar sua visita no link https://poiesis.education1.com.br/publico/agendamento/6c8349cc7260ae62e3b1396831a8398f"
+              },
+              {
+                "text": " ℹ Saiba mais no site oficial da Casa das Rosas: https://www.casadasrosas.org.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:(Casa das Rosas)",
+      "dialog_node": "node_5_1623362309014",
+      "previous_sibling": "node_4_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Aeroporto de Guarulhos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "✈️ Sendo o maior e mais movimentado aeroporto do Brasil, o GRU realiza vôos domésticos e Internacionais e oferece fácil acesso às rodovias Ayrton Senna/Marginal Tietê e Presidente Dutra. Há também várias linhas de ônibus da EMTU que ligam Guarulhos a Congonhas e outros pontos da capital paulista com tarifas que variam de R$ 5,55 a R$ 45,50. Ele está localizado a 20.4 km do centro da cidade."
+              },
+              {
+                "text": "✅ Clique no link para acessar o site oficial: https://www.gru.com.br/pt"
+              },
+              {
+                "text": "Você deseja saber como chegar por outro meio de transporte ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_4_1623340313549",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Aeroporto:(Aeroporto de Guarulhos)",
+      "dialog_node": "node_6_1623340313549",
+      "previous_sibling": "node_5_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "Petra Belas Artes ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ O local se destina à exibição de filmes desde 1956. Devido a sua programação especial, mesclando filmes de nacionalidades diversas e mantendo alguns filmes por longo período em cartaz, o Cine Belas Artes tornou-se um dos mais importantes pontos de encontro intelectual e artístico da cidade."
+              },
+              {
+                "text": "📌 Fica na Rua da Consolação, 2423, próximo à estação Paulista (linha amarela do metrô)"
+              },
+              {
+                "text": "🕘 Está temporariamente fechado"
+              },
+              {
+                "text": "🎫 Os ingressos são a partir de R$ 18"
+              },
+              {
+                "text": "ℹ  Saiba mais no site oficial do Belas Artes https://www.cinebelasartes.com.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:(Caixa Belas Artes)",
+      "dialog_node": "node_6_1623362309014",
+      "previous_sibling": "node_5_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Ônibus",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Na capital de São Paulo há três rodoviárias que trabalham com diferentes linhas de ônibus que viajam para inúmeras cidades do Brasil e até fora do país. São elas: Tietê, Jabaquara e Barra Funda."
+              },
+              {
+                "text": "🚍 Sobre qual rodoviária você deseja informações?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623111790657",
+      "conditions": "@MeioTransporte:Ônibus",
+      "dialog_node": "node_7_1623340313549",
+      "previous_sibling": "node_4_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "Despedida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Então, até logo! 👋 Foi legal falar com você. Se precisar de mais alguma coisa, é só me chamar "
+              },
+              {
+                "text": "Tchau! 👋 Gostei de falar com você. Estarei aqui caso precise de algo"
+              },
+              {
+                "text": "Até mais, amigo! 👋 Foi bom conversar com você. Se precisar de mais informações, estarei aqui"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@OiTchau:Tchau",
+      "dialog_node": "node_7_1623344320882",
+      "previous_sibling": "node_4_1623349426438"
+    },
+    {
+      "type": "standard",
+      "title": "Conjunto Nacional",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ Um dos primeiros edifícios modernos multifuncionais da cidade, o Conjunto Nacional abriga hoje 66 lojas, incluindo a tradicional Livraria Cultura, além de quatro restaurantes e duas salas de cinema."
+              },
+              {
+                "text": "📌 Fica na Avenida Paulista, nº 2073, próximo à estação Consolação (linha verde do metrô)"
+              },
+              {
+                "text": "🕘 O horário de funcionamento é de segunda a sábado das 6h às 22h30 e domingo e feriado das 10h às 22h30"
+              },
+              {
+                "text": "📅 O melhor dia para visitar é sábado"
+              },
+              {
+                "text": "🎫 A entrada é gratuita, mas alguns eventos são pagos"
+              },
+              {
+                "text": "ℹ Saiba mais no site oficial do Conjunto Nacional http://ccn.com.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:(Conjunto Nacional)",
+      "dialog_node": "node_7_1623362309014",
+      "previous_sibling": "node_6_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Rodoviária do Tietê",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🚍 A Rodoviária Tietê, como é popularmente conhecida, está localizada na zona norte da cidade de São Paulo (SP) e é a maior rodoviária da América Latina e a segunda maior do mundo, perdendo apenas para o Terminal Rodoviário de Nova Iorque. Fica a 4,3 km do centro da Cidade."
+              },
+              {
+                "text": "✅ Saiba mais clicando no link: https://rodoviariadotiete.com"
+              },
+              {
+                "text": "Você deseja saber como chegar por outro meio de transporte ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1623340313549",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Rodoviaria:(Rodoviária do Tietê)",
+      "dialog_node": "node_8_1623340313549"
+    },
+    {
+      "type": "standard",
+      "title": "Teatro Gazeta",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🏙️ Em plena avenida Paulista desde 2003, o Teatro Gazeta foi planejado para abrigar espetáculos teatrais adultos e infantis, shows, musicais, eventos corporativos e palestras. Os 700 lugares e um palco com 13 metros de altura, o espaço já recebeu peças renomadas como Adorei o que Você Fez e Clã das Divorciadas. O local também dispõe de um café, que vende bebidas, salgados e doces, e de um hall, que pode ser utilizado para coquetéis."
+              },
+              {
+                "text": "📌 Fica na Avenida Paulista, nº 900, próximo à estação Trianon-MASP (linha verde do metrô)"
+              },
+              {
+                "text": "🕘 O horário de funcionamento é de terça e quarta das 14h às 20h, quinta e domingo das 14h às 21h e sexta e sábado das 14h às 23h"
+              },
+              {
+                "text": "📅 O melhor dia para visitar é quarta-feira"
+              },
+              {
+                "text": "🎫 Os ingressos são a partir de R$50, alguns eventos são gratuitos."
+              },
+              {
+                "text": "ℹ Saiba mais no site oficial do Teatro Gazeta http://www.teatrogazeta.com.br"
+              },
+              {
+                "text": "Você deseja conhecer outro lugar ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Cultura:(Teatro Gazeta)",
+      "dialog_node": "node_8_1623362309014",
+      "previous_sibling": "node_7_1623362309014"
+    },
+    {
+      "type": "standard",
+      "title": "Início",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sobre o que você quer conversar? Podemos falar sobre: "
+              },
+              {
+                "text": "🗺️ Como chegar em São Paulo"
+              },
+              {
+                "text": "🏙️ Locais culturais para visitar em São Paulo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Item_menu:Início || @SimNao:Não",
+      "dialog_node": "node_9_1623338801024",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Rodoviária da Barra Funda",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "🚍 O Terminal Rodoviário da Barra Funda é o segundo intercambiador de transportes mais importante de São Paulo. Inaugurado em 17 de dezembro de 1988, fica localizado na Barra Funda e reúne num mesmo complexo terminal linhas de ônibus municipais, intermunicipais, interestaduais, internacionais e metropolitanos, trens e metrô. Fica a 7,9 km do centro da Cidade."
+              },
+              {
+                "text": "✅ Saiba mais clicando no link: https://www.rodoviariadabarrafunda.com/"
+              },
+              {
+                "text": "Você deseja saber como chegar por outro meio de transporte ou voltar ao início?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1623340313549",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1623349426438"
+      },
+      "conditions": "@Rodoviaria:(Rodoviária da Barra Funda)",
+      "dialog_node": "node_9_1623340313549",
+      "previous_sibling": "node_8_1623340313549"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "disabled": true,
+      "conditions": "@SimNao:Não",
+      "dialog_node": "response_10_1623362309014",
+      "previous_sibling": "response_9_1623362309014"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1623349426438",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1623111790657"
+      },
+      "conditions": "@Item_menu:(Meio de transporte)",
+      "dialog_node": "response_5_1623349426440"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1623349426438",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1623338801024"
+      },
+      "conditions": "@Item_menu:Início",
+      "dialog_node": "response_6_1623358661305",
+      "previous_sibling": "response_5_1623349426440"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1623349426438",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1623362309011"
+      },
+      "conditions": "@Item_menu:Lugar",
+      "dialog_node": "response_6_1623358929359",
+      "previous_sibling": "response_6_1623358661305"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1623349426438",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_9_1623338801024"
+      },
+      "conditions": "@SimNao:Não",
+      "dialog_node": "response_7_1623360559053",
+      "previous_sibling": "response_6_1623358929359"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Posso te falar um pouco sobre o MASP, Itaú Cultural, Centro Cultural FIESP (Ruth Cardoso), Casa das Rosas, Petra Belas Artes, Conjunto Nacional e Teatro Gazeta. Sobre qual local você deseja mais informações?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1623362309011",
+      "disabled": true,
+      "conditions": "@SimNao:Sim",
+      "dialog_node": "response_9_1623362309014"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Ajuda - Gulliver",
+  "language": "pt-br",
+  "description": ""
+}

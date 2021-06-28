@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/novocadastrologin.css">
+    
+  </head>
+<body>
+
+
+<div class="topnav">          
+    <div class="textnav">
+      <div><a id="index" href="./index.html">Index</a></div>
+      <div><a href="./novocadastrologin.html">Novo Cadastro</a></div>
+      <div><a href="./faleconosco.html">Fale Conosco</a></div>
+      <div><a href="./portal.html">Portal</a></div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="child_container" >
+    <form method="GET" action="#">
+      <h1 class="th1">Cadastro</h1> 
+      <div> 
+        <label for="nome">Primeiro nome</label>
+        <input class="entrada" id="nome" name="nome_cadastro" required type="text" pattern="[A-Za-z]{10}" placeholder="Girafales" 
+        oninvalid="setCustomValidity('Digite o nome corretamente')"/>
+      </div>
+    
+      <div> 
+        <label for="senha">Sua senha</label>
+        <input class="entrada" id="senha" name="senha_cadastro" required type="password" pattern="[0-9]{5}" maxlength="5" placeholder="12345"
+        oninvalid="setCustomValidity('A senha deve conter apenas 5 números')"> 
+      </div>
+  
+      <input class="entrada" type=submit value="Cadastrar" id="btn_submit"/>
+    </form>
+    <div id = "login">
+      <p class="p_login">Já tem conta?</p>
+    <a href="./index.html"><input class="entrada" id="b_login"type="submit" value="Ir para Login" /></a>
+  </div> 
+</div>
+</div>
+
+</body>
+</html>
+
+<script src="./js/script.js"></script>
+<script>
+  pag_cadastro();
+</script>

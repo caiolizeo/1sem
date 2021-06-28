@@ -1,0 +1,24 @@
+
+Caio Lizeo Soares - 87809
+Isabela Bianca Correa de Macedo - 88493
+Jonatan Jacó Mascalhusk De Oliveira Souza - 88221
+Lucas Amorim Marques Pereira - 84659
+Rodrigo Gonzalo Barbosa Segura - 83954
+
+------------------
+
+Bot Gulliver
+API Key: HZyRjKM2GYo8DWtN01sBGdzdTIBGpErE2q1jScPVe9mR
+ID: 6c8c924e-3194-4cf2-a09a-3cfb80cf11a4
+
+------------------
+
+Language Translator
+API Key: __aHDxCm06RHyypS0qbaA8vtT3BhGjw7RZcgZ9aK-80I
+URL: https://api.us-south.language-translator.watson.cloud.ibm.com/instances/cf253b47-910b-4b12-8e69-df82fd64b20d
+
+------------------
+
+Bot Telegram
+Token: 1838063836:AAHzeKjuYmeXcGid5y-npv3NlCphJtwMXWI
+Nome: @gulliver_tdsf_bot
