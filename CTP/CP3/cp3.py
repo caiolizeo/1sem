@@ -5,15 +5,34 @@ qtdInscrito = []
 cadastrado = False
 
 inscHistoria = 0        #2a e 3a série
+arrHistoria = []
+
 inscTeatro = 0          #3a e 4a série
+arrTeatro = []
+
 inscLingSinais = 0      #Todos
+arrLingSinais = []
+
 inscExpArtist = 0       #4a e 5a série
+arrExpArtist = []
+
 inscSoletrando = 0      #5a série
+arrSoletrando = []
+
 inscLeitDinamica4a = 0  #4a série
+arrLeitDinamica4a = []
+
 inscCorpoFala = 0       #3a série
+arrCorpoFala = []
+
 inscMundoImag = 0       #2a série
+arrMundoImag = []
+
 inscLeitDinamica5a = 0  #5a série
+arrLeitDinamica5a = []
+
 inscCriandoEmoji = 0    #2a série
+arrCriandoEmoji = []
 
 menu = int(input("Menu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
 while(menu != 0):
@@ -46,6 +65,7 @@ while(menu != 0):
                         print("Aluno  não  cadastrado. Favor procurar a coordenação do Fundamental I")
                         rm = int(input("Digite o RM do aluno \n---> "))
                 serieAtual = serie[matricula.index(rm)]
+                print(serieAtual)
 
                 
                 hist = "1 - Criar e contar histórias(Vagas disponiveis: {})".format(10-inscHistoria)
@@ -63,9 +83,22 @@ while(menu != 0):
                         emoji = "4 - INDISPONIVEL"
                 
                 if(serieAtual == 2):
-                        print("Escolha um evento \n{} \n{} \n{} \n{}".format(hist, sinais, mundo,))
-                        #print("1 - Criar e contar histórias(Vagas disponiveis: {})\n2 - A língua de sinais (Vagas disponiveis: {})\n3 - O mundo da imaginação (Vagas disponiveis: {})\n4 - Criando e recriando com emojis (Vagas disponiveis: {})".format(10-inscHistoria, 10-inscLingSinais, 10-inscMundoImag, 10-inscCriandoEmoji))
+                        print("Escolha um evento \n{} \n{} \n{} \n{}".format(hist, sinais, mundo, emoji))
                         seleciona = int(input("---> "))
+
+                        if(seleciona == 1 and rm not in arrHistoria):
+                                inscHistoria += 1
+                                arrHistoria.append(rm)
+                                print("ALUNO CADASTRADO")
+                        elif(seleciona == 2):
+                                inscLingSinais += 1
+                        elif(seleciona == 3):
+                                inscMundoImag += 1
+                        elif(seleciona == 4):
+                                inscCriandoEmoji += 1
+                        elif(rm in arrHistoria):
+                                print("ALUNO JA FOI CADASTRADO")
+
 
 
 
