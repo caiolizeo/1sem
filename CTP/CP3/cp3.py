@@ -56,6 +56,8 @@ while(menu != 0):
                                         serieAtual = int(input("Digite a série do aluno \n---> "))
                                 serie.append(serieAtual)
                                 qtdInscrito.append(0)
+
+        
         
         elif(menu == 2):
                 rm = int(input("Digite o RM do aluno \n---> "))
@@ -64,24 +66,40 @@ while(menu != 0):
                         rm = int(input("Digite o RM do aluno \n---> "))
                 serieAtual = serie[matricula.index(rm)]
 
-                hist = "1 - Criar e contar histórias(Vagas disponiveis: {})".format(10-vagas[0])
-                sinais = "2 - A língua de sinais (Vagas disponiveis: {})".format(10-vagas[2])
-                mundo = "3 - O mundo da imaginação (Vagas disponiveis: {})".format(10-vagas[7])
-                emoji = "4 - Criando e recriando com emojis (Vagas disponiveis: {})".format(10-vagas[9])
+                hist = "Criar e contar histórias (Vagas disponíveis: {})".format(10-vagas[0])
+                teatro = "Teatro: Luz, Câmera e Ação (Vagas disponíveis: {})".format(10-vagas[1])
+                sinais = "A língua de sinais (Vagas disponíveis: {})".format(10-vagas[2])
+                expArt = "Expressão Artística (Vagas disponíveis: {})".format(10-vagas[3])
+                soletr = "Soletrando (Vagas disponíveis: {})".format(10-vagas[4])
+                leitDin4a = "Leitura dinâmica - 4ª série (Vagas disponíveis: {})".format(10-vagas[5])
+                corpoFala = "O corpo Fala (Vagas disponíveis: {})".format(10-vagas[6])
+                mundo = "O mundo da imaginação (Vagas disponíveis: {})".format(10-vagas[7])
+                leitDin5a = "Leitura dinâmica - 5ª série (Vagas disponíveis: {})".format(10-vagas[8])
+                emoji = "Criando e recriando com emojis (Vagas disponíveis: {})".format(10-vagas[9])
 
                 if(vagas[0] == 10):
                         hist = "*** INDISPONIVEL ***"
                 if(vagas[1] == 10):
-                        hist = "*** INDISPONIVEL ***"
+                        teatro = "*** INDISPONIVEL ***"
                 if(vagas[2] == 10):
                         sinais = "*** INDISPONIVEL ***"
+                if(vagas[3] == 10):
+                        expArt = "*** INDISPONIVEL ***"
+                if(vagas[4] == 10):
+                        soletr = "*** INDISPONIVEL ***"
+                if(vagas[5] == 10):
+                        leitDin4a = "*** INDISPONIVEL ***"
+                if(vagas[6] == 10):
+                        corpoFala = "*** INDISPONIVEL ***"
                 if(vagas[7] == 10):
                         mundo = "*** INDISPONIVEL ***"
+                if(vagas[8] == 10):
+                        leitDin5a = "*** INDISPONIVEL ***"
                 if(vagas[9] == 10):
                         emoji = "*** INDISPONIVEL ***"
                 
                 if(serieAtual == 2):
-                        print("Escolha um evento \n{} \n{} \n{} \n{}".format(hist, sinais, mundo, emoji))
+                        print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(hist, sinais, mundo, emoji))
                         seleciona = int(input("---> "))
 
                         cadastrou = False
@@ -120,7 +138,7 @@ while(menu != 0):
                                 print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
                 
                 if(serieAtual == 3):
-                         print("Escolha um evento \n{} \n{} \n{} \n{}".format(hist, sinais, mundo, emoji))
+                         print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(hist, teatro, sinais,corpoFala))
                          seleciona = int(input("---> "))
 
 
