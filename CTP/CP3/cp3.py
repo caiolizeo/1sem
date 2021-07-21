@@ -19,7 +19,6 @@ vagas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 cadastrou = False
 finalizou = False
-
 '''
 Posicoes:
 0 Historia - 2a e 3a série
