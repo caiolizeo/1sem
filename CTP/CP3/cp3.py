@@ -64,7 +64,14 @@ def listaAluno(numMatricula, nome, serieAluno):
         elif(len(inscricoes) == 1):
                 aluno = (numMatricula, nome, serieAluno, inscricoes[0])
 
-        return aluno
+        if(len(aluno) == 6):
+                x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{} \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4], aluno[5])
+        elif(len(aluno) == 5):
+                x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4])
+        elif(len(aluno) == 4):
+                x = "RM: {} - {} - {}ª. série \nOficinas: \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3])
+
+        return x
 
 menu = int(input("Menu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
 while(menu != 0):

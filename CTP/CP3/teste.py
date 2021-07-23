@@ -8,38 +8,40 @@ cadastrado = False
 vagas = [0]*10
 
 arrHist = [111, 559, 668]            #2a e 3a série
-arrTeatro = [111, 354, 475]          #3a e 4a série
-arrSinais = [111, 559, 668] 
+arrTeatro = [114, 354, 475]          #3a e 4a série
+arrSinais = [123, 559, 668] 
 
 oficinas = (arrHist, arrTeatro, arrSinais)
 
 
-def verificaInscricao(numMatricula, nome, serieAluno):
-        
-        inscricoes  = []
-        if(numMatricula in arrHist):
-                inscricoes.append("Criar e contar histórias – 2ª. feira - Matutino")
-        if(numMatricula in arrTeatro):
-                inscricoes.append("Teatro: Luz, Câmera e Ação – 3ª. feira – Matutino")
-        if(numMatricula in arrSinais):
-                inscricoes.append("A língua de sinais – 4ª. feira - Matutino")
+def listaAluno(numMatricula, nome, serieAluno):
+    inscricoes  = []
+    if(numMatricula in arrHist):
+            inscricoes.append("Criar e contar histórias - 2ª. feira - Matutino")
+    if(numMatricula in arrTeatro):
+            inscricoes.append("Teatro: Luz, Câmera e Ação - 3ª. feira – Matutino")
+    if(numMatricula in arrSinais):
+            inscricoes.append("A língua de sinais - 4ª. feira - Matutino")
 
-    
-
-        if(len(inscricoes) == 3):
+    if(len(inscricoes) == 3):
             aluno = (numMatricula, nome, serieAluno, inscricoes[0], inscricoes[1], inscricoes[2])
-        elif(len(inscricoes) == 2):
+    elif(len(inscricoes) == 2):
             aluno = (numMatricula, nome, serieAluno, inscricoes[0], inscricoes[1])
-        elif(len(inscricoes) == 1):
+    elif(len(inscricoes) == 1):
             aluno = (numMatricula, nome, serieAluno, inscricoes[0])
-        
 
-        return aluno
+    if(len(aluno) == 6):
+            x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{} \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4], aluno[5])
+    elif(len(aluno) == 5):
+            x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4])
+    elif(len(aluno) == 4):
+            x = "RM: {} - {} - {}ª. série \nOficinas: \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3])
 
+    return x
 
-aluno = verificaInscricao(numMatricula[0], nomeAluno[0], serie[0])
+aluno = listaAluno(numMatricula[0], nomeAluno[0], serie[0])
+print(aluno)
 
-print(len(aluno))
 '''
 aluno = (nomeAluno[0], matricula[0], serie[0], qtdInscrito[0])
 aluno2 = (nomeAluno[1], matricula[1], serie[1], qtdInscrito[1])
