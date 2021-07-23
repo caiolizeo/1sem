@@ -15,7 +15,7 @@ arrCorpoFala = []       #3a série
 arrMundo = []           #2a série
 arrLeitDin5a = []       #5a série
 arrEmoji = []           #2a série
-vagas = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+vagas = [0]*10
 
 '''
 Posicoes:
@@ -238,7 +238,7 @@ while(menu != 0):
                                         valor = vagas[8] + 1
                                         vagas[8] = valor
                                         arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO")
+                                        print("ALUNO CADASTRADO") 
                                         cadastrou = True
                                 else:
                                         print("ALUNO JA FOI CADASTRADO")
@@ -247,7 +247,14 @@ while(menu != 0):
                                         qtdInscrito[matricula.index(rm)] = valor
                         else:
                                 print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
-
+        elif(menu == 3):
+                print("Listar inscrições \n1 - Listar por aluno (ordem alfabética de nome) \n2 - Listar por oficina (ordem alfabética")
+                opcao = int(input("---> "))
+                while(opcao < 1 or opcao > 2):
+                        opcao = int(input("Opção inválida, digite novamente. \n---> "))
+                if(opcao == 1):
+                       print("***** Alunos inscritos – Ordem: Alfabética (nome) *****")
+                       
         elif(menu == 4):
                 break
 
