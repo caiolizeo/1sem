@@ -14,7 +14,7 @@ arrSinais = [111, 444, 555]
 oficinas = (arrHist, arrTeatro, arrSinais)
 
 
-def listaAluno(numMatricula, nome, serieAluno):
+def listaAluno(nome, numMatricula, serieAluno):
     inscricoes  = []
     if(numMatricula in arrHist):
             inscricoes.append("Criar e contar histórias - 2ª. feira - Matutino")
@@ -39,19 +39,35 @@ def listaAluno(numMatricula, nome, serieAluno):
 
     return x
 
-aluno = listaAluno(numMatricula[0], nomeAluno[0], serie[0])
-#print(aluno)
 
 def ordenaLista(nome):
+        qtdAlunos = len(nome)
+        cont = 0
+        cadastro = []
+        while(cont < qtdAlunos):
+            list = (nomeAluno[cont], numMatricula[cont], serie[cont])
+            cadastro.append(list)  
+            cont+=1 
+        cadastroOrdenado = sorted(cadastro)
+        return cadastroOrdenado
+
+
+#x = ordenaLista(nomeAluno)
+#tupla = x[0]
+
+
+
+#print(listaAluno(tupla[0], tupla[1],tupla[2]))
+
+'''
+def imprimeLista(nome):
     qtdAlunos = len(nome)
     cont = 0
     while(cont < qtdAlunos):
         list = listaAluno(numMatricula[cont], nomeAluno[cont], serie[cont])
         print(list)
         cont+=1
-
-
-ordenaLista(nomeAluno)
+'''
 
 '''
 aluno = (nomeAluno[0], matricula[0], serie[0], qtdInscrito[0])
