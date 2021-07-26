@@ -5,9 +5,9 @@ serie = []
 qtdInscrito = []
 
 #Arrays das oficinas
-arrHist = []            #2a e 3a série
-arrTeatro = []          #3a e 4a série
-arrSinais = []          #Todos
+arrHist = []           
+arrTeatro = []          
+arrSinais = [] 
 arrExpArt = []          #4a e 5a série  
 arrSoletr = []          #5a série
 arrLeitDram = []       #4a série     
@@ -34,7 +34,7 @@ Posicoes:
 cadastrou = False
 finalizou = False
 
-def listaAluno(numMatricula, nome, serieAluno):
+def formataAluno(nome, numMatricula, serieAluno):
         inscricoes  = []
         if(numMatricula in arrHist):
                 inscricoes.append("Criar e contar histórias - 2ª. feira - Matutino")
@@ -65,13 +65,32 @@ def listaAluno(numMatricula, nome, serieAluno):
                 aluno = (numMatricula, nome, serieAluno, inscricoes[0])
 
         if(len(aluno) == 6):
-                x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{} \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4], aluno[5])
+                x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{} \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4], aluno[5])
         elif(len(aluno) == 5):
-                x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4])
+                x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4])
         elif(len(aluno) == 4):
-                x = "RM: {} - {} - {}ª. série \nOficinas: \n{}".format(aluno[0], aluno[1], aluno[2], aluno[3])
+                x = "RM: {} - {} - {}ª. série \nOficinas: \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3])
 
         return x
+
+def ordenaLista(nome):
+        qtdAlunos = len(nome)
+        cont = 0
+        cadastro = []
+        while(cont < qtdAlunos):
+            list = (nomeAluno[cont], matricula[cont], serie[cont])
+            cadastro.append(list)  
+            cont+=1 
+        cadastroOrdenado = sorted(cadastro)
+        return cadastroOrdenado
+
+def listaAluno(tuplaAlunos):
+        cont = 0
+        while(cont < len(tuplaAlunos)):
+                tupla = tuplaAlunos[cont]
+                print(formataAluno(tupla[0], tupla[1], tupla[2]))
+                cont+=1
+
 
 menu = int(input("Menu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
 while(menu != 0):
@@ -292,8 +311,9 @@ while(menu != 0):
                 while(opcao < 1 or opcao > 2):
                         opcao = int(input("Opção inválida, digite novamente. \n---> "))
                 if(opcao == 1):
-                       print("***** Alunos inscritos – Ordem: Alfabética (nome) *****")
-
+                       print("\n***** Alunos inscritos – Ordem: Alfabética (nome) *****\n")
+                       listaAluno(ordenaLista(nomeAluno))
+                
         elif(menu == 4):
                 break
 
