@@ -35,6 +35,7 @@ Posicoes:
 cadastrou = False
 finalizou = False
 
+#Funções da lista por aluno
 def formataAluno(nome, numMatricula, serieAluno):
         inscricoes  = []
         if(numMatricula in arrHist):
@@ -71,7 +72,6 @@ def formataAluno(nome, numMatricula, serieAluno):
                 x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4])
         elif(len(aluno) == 4):
                 x = "RM: {} - {} - {}ª. série \nOficinas: \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3])
-
         return x
 
 def ordenaLista(nome):
@@ -90,6 +90,46 @@ def listaAluno(tuplaAlunos):
                 tupla = tuplaAlunos[cont]
                 print(formataAluno(tupla[0], tupla[1], tupla[2]))
                 cont+=1
+
+#Funções da lista por oficina
+def listaOficina():
+       
+        of1 = ("A língua de sinais - 4ª. feira - Matutino", arrSinais)
+        of2 = ("Criando e recriando com emojis - 6ª. feira - Vespertino", arrEmoji)
+        of3 = ("Criar e contar histórias - 2ª. feira - Matutino", arrHist)
+        of4 = ("Expressão Artística - 5ª. feira - Matutino", arrExpArt)
+        of5 = ("Leitura dinâmica - 5ª. feira - Vespertino", arrLeitDin)
+        of6 = ("Leitura dramática - 2ª. feira - Vespertino",arrLeitDram)
+        of7 = ("O corpo fala - 3ª. feira - Vespertino", arrCorpoFala)
+        of8 = ("O mundo da imaginação - 4ª. feira - Vespertino", arrMundo)
+        of9 = ("Soletrando - 6ª. feira - Matutino", arrSoletr)
+        of10 = ("Teatro: Luz, Câmera e Ação - 3ª. feira – Matutino", arrTeatro)
+        
+        oficinas = [of1, of2, of3, of4, of5, of6, of7, of8, of9, of10]
+
+        return oficinas 
+
+def imprimeOficinas(oficinas):
+        cont = 0
+        for x in range(len(oficinas)):
+                ofAtual = oficinas[cont]
+                print(ofAtual[0])
+                alunos = ofAtual[1]
+                contAlunos = 0
+                for x in range(len(alunos)):
+                        rm = alunos[contAlunos]
+                        nomeAtual = nomeAluno[contAlunos]
+                        serieAtual = serie[contAlunos]
+                        print("RM: {} - {} - {}ª. série".format(rm, nomeAtual, serieAtual))
+                        contAlunos += 1
+                if(len(alunos) > 1):
+                        print("\nTotal: {} alunos".format(len(alunos)))
+                elif(len(alunos) == 1):
+                        print("\nTotal: {} aluno".format(len(alunos)))
+                else:
+                        print("Nenhum aluno cadastrado")
+                print("\n"+"-"*60+"\n")
+                cont += 1
 
 
 menu = int(input("Menu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
@@ -122,197 +162,216 @@ while(menu != 0):
                         
         elif(menu == 2):
                 rm = int(input("Digite o RM do aluno \n---> "))
-                while(rm not in matricula):
+                while(rm not in matricula and rm != 0):
                         print("Aluno  não  cadastrado. Favor procurar a coordenação do Fundamental I")
                         rm = int(input("Digite o RM do aluno \n---> "))
-                serieAtual = serie[matricula.index(rm)]
+                if(rm != 0):
 
-                hist = "Criar e contar histórias (Vagas disponíveis: {})".format(10-vagas[0])
-                teatro = "Teatro: Luz, Câmera e Ação (Vagas disponíveis: {})".format(10-vagas[1])
-                sinais = "A língua de sinais (Vagas disponíveis: {})".format(10-vagas[2])
-                expArt = "Expressão Artística (Vagas disponíveis: {})".format(10-vagas[3])
-                soletr = "Soletrando (Vagas disponíveis: {})".format(10-vagas[4])
-                leitDram = "Leitura dramática - 4ª série (Vagas disponíveis: {})".format(10-vagas[5])
-                corpoFala = "O corpo Fala (Vagas disponíveis: {})".format(10-vagas[6])
-                mundo = "O mundo da imaginação (Vagas disponíveis: {})".format(10-vagas[7])
-                leitDin5a = "Leitura dinâmica - 5ª série (Vagas disponíveis: {})".format(10-vagas[8])
-                emoji = "Criando e recriando com emojis (Vagas disponíveis: {})".format(10-vagas[9])
+                                
+                        serieAtual = serie[matricula.index(rm)]
 
-                if(vagas[0] == 10):
-                        hist = "*** INDISPONIVEL ***"
-                if(vagas[1] == 10):
-                        teatro = "*** INDISPONIVEL ***"
-                if(vagas[2] == 10):
-                        sinais = "*** INDISPONIVEL ***"
-                if(vagas[3] == 10):
-                        expArt = "*** INDISPONIVEL ***"
-                if(vagas[4] == 10):
-                        soletr = "*** INDISPONIVEL ***"
-                if(vagas[5] == 10):
-                        leitDram = "*** INDISPONIVEL ***"
-                if(vagas[6] == 10):
-                        corpoFala = "*** INDISPONIVEL ***"
-                if(vagas[7] == 10):
-                        mundo = "*** INDISPONIVEL ***"
-                if(vagas[8] == 10):
-                        leitDin5a = "*** INDISPONIVEL ***"
-                if(vagas[9] == 10):
-                        emoji = "*** INDISPONIVEL ***"
+                        hist = "Criar e contar histórias (Vagas disponíveis: {})".format(10-vagas[0])
+                        teatro = "Teatro: Luz, Câmera e Ação (Vagas disponíveis: {})".format(10-vagas[1])
+                        sinais = "A língua de sinais (Vagas disponíveis: {})".format(10-vagas[2])
+                        expArt = "Expressão Artística (Vagas disponíveis: {})".format(10-vagas[3])
+                        soletr = "Soletrando (Vagas disponíveis: {})".format(10-vagas[4])
+                        leitDram = "Leitura dramática - 4ª série (Vagas disponíveis: {})".format(10-vagas[5])
+                        corpoFala = "O corpo Fala (Vagas disponíveis: {})".format(10-vagas[6])
+                        mundo = "O mundo da imaginação (Vagas disponíveis: {})".format(10-vagas[7])
+                        leitDin5a = "Leitura dinâmica - 5ª série (Vagas disponíveis: {})".format(10-vagas[8])
+                        emoji = "Criando e recriando com emojis (Vagas disponíveis: {})".format(10-vagas[9])
+
+                        if(vagas[0] == 10):
+                                hist = "*** INDISPONIVEL ***"
+                        if(vagas[1] == 10):
+                                teatro = "*** INDISPONIVEL ***"
+                        if(vagas[2] == 10):
+                                sinais = "*** INDISPONIVEL ***"
+                        if(vagas[3] == 10):
+                                expArt = "*** INDISPONIVEL ***"
+                        if(vagas[4] == 10):
+                                soletr = "*** INDISPONIVEL ***"
+                        if(vagas[5] == 10):
+                                leitDram = "*** INDISPONIVEL ***"
+                        if(vagas[6] == 10):
+                                corpoFala = "*** INDISPONIVEL ***"
+                        if(vagas[7] == 10):
+                                mundo = "*** INDISPONIVEL ***"
+                        if(vagas[8] == 10):
+                                leitDin5a = "*** INDISPONIVEL ***"
+                        if(vagas[9] == 10):
+                                emoji = "*** INDISPONIVEL ***"
                 
-                if(serieAtual == 2):
-                        print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(hist, sinais, mundo, emoji))
-                        seleciona = int(input("---> "))
+                        if(serieAtual == 2):
+                                print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(hist, sinais, mundo, emoji))
+                                seleciona = int(input("---> "))
 
-                        if(qtdInscrito[matricula.index(rm)] < 3):
-                                if(seleciona == 1 and rm not in arrHist and vagas[0] < 10):
-                                        valor = vagas[0] + 1
-                                        vagas[0] = valor
-                                        arrHist.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 2 and rm not in arrSinais and vagas[2] < 10):
-                                        valor = vagas[2] + 1
-                                        vagas[2] = valor
-                                        arrSinais.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 3 and rm not in arrMundo and vagas[7] < 10):
-                                        valor = vagas[7] + 1
-                                        vagas[7] = valor
-                                        arrMundo.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 4 and rm not in arrEmoji and vagas[9] < 10):
-                                        valor = vagas[9] + 1
-                                        vagas[9] = valor
-                                        arrEmoji.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
+                                if(qtdInscrito[matricula.index(rm)] < 3):
+                                        if(seleciona == 1 and rm not in arrHist and vagas[0] < 10):
+                                                valor = vagas[0] + 1
+                                                vagas[0] = valor
+                                                arrHist.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 2 and rm not in arrSinais and vagas[2] < 10):
+                                                valor = vagas[2] + 1
+                                                vagas[2] = valor
+                                                arrSinais.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 3 and rm not in arrMundo and vagas[7] < 10):
+                                                valor = vagas[7] + 1
+                                                vagas[7] = valor
+                                                arrMundo.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 4 and rm not in arrEmoji and vagas[9] < 10):
+                                                valor = vagas[9] + 1
+                                                vagas[9] = valor
+                                                arrEmoji.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        else:
+                                                print("ALUNO JA FOI CADASTRADO")
+                                        if(cadastrou):
+                                                valor = qtdInscrito[matricula.index(rm)] + 1
+                                                qtdInscrito[matricula.index(rm)] = valor
                                 else:
-                                        print("ALUNO JA FOI CADASTRADO")
-                                if(cadastrou):
-                                        valor = qtdInscrito[matricula.index(rm)] + 1
-                                        qtdInscrito[matricula.index(rm)] = valor
-                        else:
-                                print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
-                
-                if(serieAtual == 3):
-                        print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(hist, teatro, sinais,corpoFala))
-                        seleciona = int(input("---> "))
+                                        print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
+                        
+                        if(serieAtual == 3):
+                                print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(hist, teatro, sinais,corpoFala))
+                                seleciona = int(input("---> "))
 
-                        if(qtdInscrito[matricula.index(rm)] < 3):
-                                if(seleciona == 1 and rm not in arrHist and vagas[0] < 10):
-                                        valor = vagas[0] + 1
-                                        vagas[0] = valor
-                                        arrHist.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 2 and rm not in arrTeatro and vagas[1] < 10):
-                                        valor = vagas[1] + 1
-                                        vagas[1] = valor
-                                        arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 3 and rm not in arrSinais and vagas[2] < 10):
-                                        valor = vagas[2] + 1
-                                        vagas[2] = valor
-                                        arrSinais.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 4 and rm not in arrCorpoFala and valor[6] < 10):
-                                        valor = vagas[6] + 1
-                                        vagas[6] = valor
-                                        arrCorpoFala.append(rm)
-                                        print("ALUNO CADASTRO")
-                                        cadastrou = True
+                                if(qtdInscrito[matricula.index(rm)] < 3):
+                                        if(seleciona == 1 and rm not in arrHist and vagas[0] < 10):
+                                                valor = vagas[0] + 1
+                                                vagas[0] = valor
+                                                arrHist.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 2 and rm not in arrTeatro and vagas[1] < 10):
+                                                valor = vagas[1] + 1
+                                                vagas[1] = valor
+                                                arrTeatro.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 3 and rm not in arrSinais and vagas[2] < 10):
+                                                valor = vagas[2] + 1
+                                                vagas[2] = valor
+                                                arrSinais.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 4 and rm not in arrCorpoFala and valor[6] < 10):
+                                                valor = vagas[6] + 1
+                                                vagas[6] = valor
+                                                arrCorpoFala.append(rm)
+                                                print("ALUNO CADASTRO")
+                                                cadastrou = True
+                                        else:
+                                                print("ALUNO JA FOI CADASTRADO")
+                                        if(cadastrou):
+                                                valor = qtdInscrito[matricula.index(rm)] + 1
+                                                qtdInscrito[matricula.index(rm)] = valor
                                 else:
-                                        print("ALUNO JA FOI CADASTRADO")
-                                if(cadastrou):
-                                        valor = qtdInscrito[matricula.index(rm)] + 1
-                                        qtdInscrito[matricula.index(rm)] = valor
-                        else:
-                                print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
+                                        print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
 
-                if(serieAtual == 4):
-                        print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(teatro, sinais, expArt, leitDram))
-                        seleciona = int(input("---> "))
+                        if(serieAtual == 4):
+                                print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(teatro, sinais, expArt, leitDram))
+                                seleciona = int(input("---> "))
 
-                        if(qtdInscrito[matricula.index(rm)] < 3):
-                                if(seleciona == 1 and rm not in arrTeatro and vagas[1] < 10):
-                                        valor = vagas[1] + 1
-                                        vagas[1] = valor
-                                        arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 2 and rm not in arrSinais and vagas[2] < 10):
-                                        valor = vagas[2] + 1
-                                        vagas[2] = valor
-                                        arrSinais.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 3 and rm not in arrExpArt and vagas[3] < 10):
-                                        valor = vagas[3] + 1
-                                        vagas[3] = valor
-                                        arrSinais.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 4 and rm not in arrLeitDram and vagas[5] < 10):
-                                        valor = vagas[5] + 1
-                                        vagas[5] = valor
-                                        arrSinais.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
+                                if(qtdInscrito[matricula.index(rm)] < 3):
+                                        if(seleciona == 1 and rm not in arrTeatro and vagas[1] < 10):
+                                                valor = vagas[1] + 1
+                                                vagas[1] = valor
+                                                arrTeatro.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 2 and rm not in arrSinais and vagas[2] < 10):
+                                                valor = vagas[2] + 1
+                                                vagas[2] = valor
+                                                arrSinais.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 3 and rm not in arrExpArt and vagas[3] < 10):
+                                                valor = vagas[3] + 1
+                                                vagas[3] = valor
+                                                arrSinais.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 4 and rm not in arrLeitDram and vagas[5] < 10):
+                                                valor = vagas[5] + 1
+                                                vagas[5] = valor
+                                                arrSinais.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        else:
+                                                print("ALUNO JA FOI CADASTRADO")
+                                        if(cadastrou):
+                                                valor = qtdInscrito[matricula.index(rm)] + 1
+                                                qtdInscrito[matricula.index(rm)] = valor
                                 else:
-                                        print("ALUNO JA FOI CADASTRADO")
-                                if(cadastrou):
-                                        valor = qtdInscrito[matricula.index(rm)] + 1
-                                        qtdInscrito[matricula.index(rm)] = valor
-                        else:
-                                print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
-                
-                if(serieAtual == 5):
-                        print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(sinais, expArt, soletr, leitDin5a))
-                        seleciona = int(input("---> "))
-                        if(qtdInscrito[matricula.index(rm)] < 3):
-                                if(seleciona == 1 and rm not in arrSinais and vagas[2] < 10):
-                                        valor = vagas[2] + 1
-                                        vagas[2] = valor
-                                        arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 2 and rm not in arrExpArt and vagas[3] < 10):
-                                        valor = vagas[3] + 1
-                                        vagas[3] = valor
-                                        arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 3 and rm not in arrSoletr and vagas[4] < 10):
-                                        valor = vagas[4] + 1
-                                        vagas[4] = valor
-                                        arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO")
-                                        cadastrou = True
-                                elif(seleciona == 4 and rm not in arrLeitDin and vagas[8] < 10):
-                                        valor = vagas[8] + 1
-                                        vagas[8] = valor
-                                        arrTeatro.append(rm)
-                                        print("ALUNO CADASTRADO") 
-                                        cadastrou = True
+                                        print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
+                        
+                        if(serieAtual == 5):
+                                print("Escolha um evento \n1 - {} \n2 - {} \n3 - {} \n4 - {}\n".format(sinais, expArt, soletr, leitDin5a))
+                                seleciona = int(input("---> "))
+                                if(qtdInscrito[matricula.index(rm)] < 3):
+                                        if(seleciona == 1 and rm not in arrSinais and vagas[2] < 10):
+                                                valor = vagas[2] + 1
+                                                vagas[2] = valor
+                                                arrTeatro.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 2 and rm not in arrExpArt and vagas[3] < 10):
+                                                valor = vagas[3] + 1
+                                                vagas[3] = valor
+                                                arrTeatro.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 3 and rm not in arrSoletr and vagas[4] < 10):
+                                                valor = vagas[4] + 1
+                                                vagas[4] = valor
+                                                arrTeatro.append(rm)
+                                                print("ALUNO CADASTRADO")
+                                                cadastrou = True
+                                        elif(seleciona == 4 and rm not in arrLeitDin and vagas[8] < 10):
+                                                valor = vagas[8] + 1
+                                                vagas[8] = valor
+                                                arrTeatro.append(rm)
+                                                print("ALUNO CADASTRADO") 
+                                                cadastrou = True
+                                        else:
+                                                print("ALUNO JA FOI CADASTRADO")
+                                        if(cadastrou):
+                                                valor = qtdInscrito[matricula.index(rm)] + 1
+                                                qtdInscrito[matricula.index(rm)] = valor
                                 else:
-                                        print("ALUNO JA FOI CADASTRADO")
-                                if(cadastrou):
-                                        valor = qtdInscrito[matricula.index(rm)] + 1
-                                        qtdInscrito[matricula.index(rm)] = valor
+                                        print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
+                                
+                else:
+                        if(finalizou):
+                                menu = int(input("Menu de opções \n\n1 - *** INDISPONÍVEL ***\n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
                         else:
-                                print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
+                                menu = int(input("Menu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
+
         elif(menu == 3):
-                print("Listar inscrições \n1 - Listar por aluno (ordem alfabética de nome) \n2 - Listar por oficina (ordem alfabética)")
+                print("Listar inscrições \n1 - Listar por aluno (ordem alfabética de nome) \n2 - Listar por oficina (ordem alfabética) \n3 - Sair")
                 opcao = int(input("---> "))
-                while(opcao < 1 or opcao > 2):
+                while(opcao < 1 or opcao > 3):
                         opcao = int(input("Opção inválida, digite novamente. \n---> "))
                 if(opcao == 1):
                        print("\n***** Alunos inscritos – Ordem: Alfabética (nome) *****\n")
                        listaAluno(ordenaLista(nomeAluno))
+                if(opcao == 2):
+                        print("***** Alunos inscritos – Ordem: Alfabética (Oficinas) *****\n")
+                        imprimeOficinas(listaOficina())
+                if(opcao == 3):
+
+                        if(finalizou):
+                                menu = int(input("Menu de opções \n\n1 - *** INDISPONÍVEL ***\n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
+                        else:
+                                menu = int(input("Menu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))   
                 
         elif(menu == 4):
                 break

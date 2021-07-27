@@ -7,14 +7,14 @@ cadastrado = False
 
 vagas = [0]*10
 
-arrSinais = []          #1
-arrEmoji = []           #2
-arrHist = []            #3
-arrExpArt = []          #4
-arrLeitDin = []         #5
-arrLeitDram = []        #6
-arrCorpoFala = []       #7
-arrMundo = []           #8
+arrSinais = [111, 222, 555, 333, 444]          #1
+arrEmoji = [111, 333, 444, 555]           #2
+arrHist = [333, 444, 555]            #3
+arrExpArt = [222, 555]          #4
+arrLeitDin = [333, 555]         #5
+arrLeitDram = [111,333]        #6
+arrCorpoFala = [222, 333]       #7
+arrMundo = [111]           #8
 arrSoletr = []          #9
 arrTeatro = []          #10
 
@@ -46,9 +46,9 @@ def imprimeOficinas(oficinas):
         cont = 0
         for x in range(len(oficinas)):
                 ofAtual = oficinas[cont]
-                print(ofAtual[0])
                 alunos = ofAtual[1]
                 contAlunos = 0
+                print(ofAtual[0])
                 for x in range(len(alunos)):
                         rm = alunos[contAlunos]
                         nomeAtual = nomeAluno[contAlunos]
@@ -57,9 +57,11 @@ def imprimeOficinas(oficinas):
                         contAlunos += 1
                 if(len(alunos) > 1):
                         print("\nTotal: {} alunos".format(len(alunos)))
-                else:
+                elif(len(alunos) == 1):
                         print("\nTotal: {} aluno".format(len(alunos)))
-                print("-"*20)
+                else:
+                        print("Nenhum aluno cadastrado")
+                print("\n"+"-"*60+"\n")
                 cont += 1
 
 
