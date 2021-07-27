@@ -5,30 +5,31 @@ serie = []
 qtdInscrito = []
 
 #Arrays das oficinas
-arrHist = []           
-arrTeatro = []          
-arrSinais = [] 
-arrExpArt = []          #4a e 5a série  
-arrSoletr = []          #5a série
-arrLeitDram = []       #4a série     
-arrCorpoFala = []       #3a série  
-arrMundo = []           #2a série
-arrLeitDin5a = []       #5a série
-arrEmoji = []           #2a série
+arrSinais = []          #1
+arrEmoji = []           #2
+arrHist = []            #3
+arrExpArt = []          #4
+arrLeitDin = []         #5
+arrLeitDram = []        #6
+arrCorpoFala = []       #7
+arrMundo = []           #8
+arrSoletr = []          #9
+arrTeatro = []          #10
+
 vagas = [0]*10
 
 '''
 Posicoes:
-0 Historia - 2a e 3a série
+3 - 0 Historia - 2a e 3a série
 1 Teatro - 3a e 4a série
-2 Lingua de Sinais - Todos
+1 - 2 Lingua de Sinais - Todos
 3 Expressao Artistica - 4a e 5a série
 4 Soletrando - 5a série
 5 Leitura Dinamica - 4a série
 6 O Corpo Fala - 3a série
 7 O Mundo da Imaginacao - 2a série
 8 Leitura Dinamica - 5a série
-9 Criando Emojis - 2a série
+2 - 9 Criando Emojis - 2a série
 '''
 
 cadastrou = False
@@ -52,7 +53,7 @@ def formataAluno(nome, numMatricula, serieAluno):
                 inscricoes.append("O corpo fala - 3ª. feira - Vespertino")
         if(numMatricula in arrMundo):
                 inscricoes.append("O mundo da imaginação - 4ª. feira - Vespertino")
-        if(numMatricula in arrLeitDin5a):
+        if(numMatricula in arrLeitDin):
                 inscricoes.append("Leitura dinâmica - 5ª. feira - Vespertino")
         if(numMatricula in arrEmoji):
                 inscricoes.append("Criando e recriando com emojis - 6ª. feira - Vespertino")
@@ -74,10 +75,9 @@ def formataAluno(nome, numMatricula, serieAluno):
         return x
 
 def ordenaLista(nome):
-        qtdAlunos = len(nome)
         cont = 0
         cadastro = []
-        while(cont < qtdAlunos):
+        for x in range(len(nome)):
             list = (nomeAluno[cont], matricula[cont], serie[cont])
             cadastro.append(list)  
             cont+=1 
@@ -86,7 +86,7 @@ def ordenaLista(nome):
 
 def listaAluno(tuplaAlunos):
         cont = 0
-        while(cont < len(tuplaAlunos)):
+        for x in range(len(tuplaAlunos)):
                 tupla = tuplaAlunos[cont]
                 print(formataAluno(tupla[0], tupla[1], tupla[2]))
                 cont+=1
@@ -292,7 +292,7 @@ while(menu != 0):
                                         arrTeatro.append(rm)
                                         print("ALUNO CADASTRADO")
                                         cadastrou = True
-                                elif(seleciona == 4 and rm not in arrLeitDin5a and vagas[8] < 10):
+                                elif(seleciona == 4 and rm not in arrLeitDin and vagas[8] < 10):
                                         valor = vagas[8] + 1
                                         vagas[8] = valor
                                         arrTeatro.append(rm)
@@ -306,7 +306,7 @@ while(menu != 0):
                         else:
                                 print("APENAS TRÊS INSCRIÇÕES POR ALUNO")
         elif(menu == 3):
-                print("Listar inscrições \n1 - Listar por aluno (ordem alfabética de nome) \n2 - Listar por oficina (ordem alfabética")
+                print("Listar inscrições \n1 - Listar por aluno (ordem alfabética de nome) \n2 - Listar por oficina (ordem alfabética)")
                 opcao = int(input("---> "))
                 while(opcao < 1 or opcao > 2):
                         opcao = int(input("Opção inválida, digite novamente. \n---> "))
