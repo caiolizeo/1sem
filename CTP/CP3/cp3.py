@@ -1,9 +1,8 @@
-
 #Arrays dos alunos
-nomeAluno = []
-matricula = []
-serie = []
-qtdInscrito = []
+nomeAluno = ["Joao", "Bruno", "Zé", "Carlos", "Ana", "Maria"]
+matricula = [123, 321, 444, 459, 555, 487]
+serie = [2, 3, 4, 2, 3, 5]
+qtdInscrito = [0, 0, 0, 0, 0, 0]
 
 #Arrays das oficinas
 arrSinais = []          #1
@@ -18,7 +17,7 @@ arrSoletr = []          #9
 arrTeatro = []          #10
 
 cadastrou = True
-finalizou = True
+executando = True
 
 def menuPrincipal1():
     menu = int(input("\nMenu de opções \n\n1 - Realizar cadastro \n2 - Fazer inscrições \n3 - Listar inscrições \n4 - sair \n---> "))
@@ -213,6 +212,7 @@ def fazerInscricoes():
 #Funções da lista por aluno
 def formataAluno(nome, numMatricula, serieAluno):
     inscricoes  = []
+    aluno = ()
     if(numMatricula in arrHist):
             inscricoes.append("Criar e contar histórias - 2ª. feira - Matutino")
     if(numMatricula in arrTeatro):
@@ -240,6 +240,9 @@ def formataAluno(nome, numMatricula, serieAluno):
             aluno = (numMatricula, nome, serieAluno, inscricoes[0], inscricoes[1])
     elif(len(inscricoes) == 1):
             aluno = (numMatricula, nome, serieAluno, inscricoes[0])
+    elif(len(inscricoes) == 0):
+            aluno = (numMatricula, nome, serieAluno)
+
 
     if(len(aluno) == 6):
             x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{} \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4], aluno[5])
@@ -247,24 +250,18 @@ def formataAluno(nome, numMatricula, serieAluno):
             x = "RM: {} - {} - {}ª. série \nOficinas: \n{} \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3], aluno[4])
     elif(len(aluno) == 4):
             x = "RM: {} - {} - {}ª. série \nOficinas: \n{}\n".format(aluno[0], aluno[1], aluno[2], aluno[3])
+    elif(len(aluno) == 3):
+            x = "RM: {} - {} - {}ª. série \nO aluno não está cadastrado em nenhuma oficina\n".format(aluno[0], aluno[1], aluno[2])
     return x
 
-def ordenaLista(nome):
-    cont = 0
+def listaOrdenada(nome):
     cadastro = []
-    for x in range(len(nome)):
-        list = (nomeAluno[cont], matricula[cont], serie[cont])
+    for i in range(len(nome)):
+        list = (nomeAluno[i], matricula[i], serie[i])
         cadastro.append(list)  
-        cont+=1 
+
     cadastroOrdenado = sorted(cadastro)
     return cadastroOrdenado
-
-def listaAluno(tuplaAlunos):
-    cont = 0
-    for x in range(len(tuplaAlunos)):
-            tupla = tuplaAlunos[cont]
-            print(formataAluno(tupla[0], tupla[1], tupla[2]))
-            cont+=1
 
 #Funções da lista por oficina
 def listaOficina():
@@ -284,13 +281,12 @@ def listaOficina():
     return oficinas 
 
 def imprimeOficinas(oficinas):
-    cont = 0
-    for x in range(len(oficinas)):
-            ofAtual = oficinas[cont]
+    for i in range(len(oficinas)):
+            ofAtual = oficinas[i]
             print(ofAtual[0])
             alunos = ofAtual[1]
             contAlunos = 0
-            for x in range(len(alunos)):
+            for i in range(len(alunos)):
                     rm = alunos[contAlunos]
                     nomeAtual = nomeAluno[contAlunos]
                     serieAtual = serie[contAlunos]
@@ -303,9 +299,8 @@ def imprimeOficinas(oficinas):
             else:
                     print("Nenhum aluno cadastrado")
             print("\n"+"-"*60+"\n")
-            cont += 1
 
-while(finalizou):
+while(executando):
         if(cadastrou):
                 menu = menuPrincipal1()
         else:
@@ -331,12 +326,15 @@ while(finalizou):
                         opcao = int(input("Opção inválida, digite novamente. \n---> "))
                 if(opcao == 1):
                        print("\n#### Alunos inscritos – Ordem: Alfabética (nome) ####\n")
-                       listaAluno(ordenaLista(nomeAluno))
+                       lista = listaOrdenada(nomeAluno)
+                       for i in range(len(lista)):
+                                tupla = lista[i]
+                                print(formataAluno(tupla[0], tupla[1], tupla[2]))                         
                 if(opcao == 2):
                         print("#### Alunos inscritos – Ordem: Alfabética (Oficinas) ####\n")
                         imprimeOficinas(listaOficina())
                 if(opcao == 3):
                         continue
-                
+             
         elif(menu == 4):
-                finalizou = False
+                executando = False
